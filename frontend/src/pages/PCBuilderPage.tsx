@@ -20,11 +20,13 @@ interface PCBuilderPageProps {
 // Definindo os slots de componentes para a nossa build
 const componentSlots = [
     'Processador',
+    'Cooler', 
     'Placa Mãe',
     'Memória RAM',
     'Placa de Vídeo',
     'Armazenamento',
     'Fonte',
+    'Gabinete', 
     'Monitor',
 ];
 

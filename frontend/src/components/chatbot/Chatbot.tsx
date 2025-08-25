@@ -17,25 +17,16 @@ export const Chatbot: React.FC = () => {
 
     const handleSendMessage = async (userMessage: string) => {
         const newUserMessage: GeminiMessage = { role: 'user', parts: [{ text: userMessage }] };
-
-        // Adiciona a nova mensagem do usuário ao histórico que vemos na tela
         const currentConversation = [...messages, newUserMessage];
         setMessages(currentConversation);
         setIsLoading(true);
 
-        // --- A CORREÇÃO ESTÁ AQUI ---
-        // Criamos um histórico SÓ para a API, removendo a primeira mensagem de boas-vindas do bot.
-        // O comando .slice(1) cria uma cópia do array a partir do segundo item.
         const historyForApi = currentConversation.slice(1);
-        // ---------------------------
 
         try {
             const response = await fetch('http://localhost:3001/api/chat', {
                 method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                // Enviamos o histórico corrigido para o backend
+                headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ history: historyForApi }),
             });
 
@@ -44,7 +35,9 @@ export const Chatbot: React.FC = () => {
             }
 
             const data = await response.json();
-            const botResponse: GeminiMessage = { role: 'model', parts: [{ text: data.reply }] };
+            // Verificação de segurança: garantimos que a resposta existe
+            const botReply = data.reply || "Desculpe, não consegui pensar em uma resposta.";
+            const botResponse: GeminiMessage = { role: 'model', parts: [{ text: botReply }] };
 
             setMessages(prev => [...prev, botResponse]);
 
@@ -57,9 +50,12 @@ export const Chatbot: React.FC = () => {
         }
     };
 
+    // A CORREÇÃO PRINCIPAL ESTÁ AQUI
+    // Adicionamos `?.text || ''` para garantir que, se a mensagem for inválida,
+    // ela se torne um texto vazio em vez de `undefined`, evitando o crash.
     const chatWindowMessages = messages.map(msg => ({
         sender: msg.role === 'user' ? 'user' : 'bot',
-        text: msg.parts[0].text
+        text: msg.parts[0]?.text || ''
     }));
 
     return (
