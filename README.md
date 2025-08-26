@@ -1,69 +1,90 @@
-# React + TypeScript + Vite
+# BitByBit 🤖✨
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📖 Sobre o Projeto
 
-Currently, two official plugins are available:
+O **BitByBit** é uma plataforma multiplataforma (Web, Desktop e Mobile) criada como Projeto Integrador para o curso Técnico em Desenvolvimento de Sistemas. A aplicação busca resolver um problema comum para entusiastas de tecnologia: a dificuldade de encontrar os melhores preços e informações confiáveis ao montar ou atualizar um computador.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Nossa solução centraliza os preços das principais lojas de e-commerce do Brasil e oferece ferramentas interativas, como um montador de PC e um comparador de produtos. O grande diferencial é o **Byb**, nosso assistente de IA (potencializado pelo Google Gemini), treinado para ser um especialista em hardware e dar recomendações personalizadas aos usuários.
 
-## Expanding the ESLint configuration
+## ✨ Funcionalidades Principais
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- **🔍 Buscador Inteligente:** Pesquise produtos e filtre os resultados por loja, faixa de preço e mais.
+- **🛠️ Montador de PC Interativo:** Crie uma build de computador completa, peça por peça, e veja o custo total em tempo real.
+- **⚖️ Comparador Lado a Lado:** Selecione múltiplos produtos e compare suas especificações em uma tabela clara e objetiva.
+- **🤖 Assistente IA (Byb):** Converse com nosso chatbot especialista para tirar dúvidas, pedir recomendações e obter ajuda personalizada.
+- **🖥️ Multiplataforma:** Acessível via web, com versões para desktop (Electron) e mobile.
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 🚀 Tecnologias Utilizadas
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+O projeto é um monorepo dividido em duas partes principais:
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+| Frontend                                                                                             | Backend                                                                                                |
+| ---------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------ |
+| [**React**](https://react.dev/) com [**TypeScript**](https://www.typescriptlang.org/)                | [**Node.js**](https://nodejs.org/)                                                                     |
+| [**Vite**](https://vitejs.dev/) como ferramenta de build                                             | [**Express.js**](https://expressjs.com/) para a criação da API RESTful                                 |
+| [**Tailwind CSS**](https://tailwindcss.com/) para estilização                                        | [**Google Gemini API**](https://ai.google.dev/) para o chatbot                                         |
+| [**React Router**](https://reactrouter.com/) para navegação                                          | **MySQL** (planejado) para persistência de dados                                                       |
+| [**Electron**](https://www.electronjs.org/) (planejado) para a versão desktop                        |                                                                                                        |
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## ⚙️ Como Executar o Projeto
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Siga os passos abaixo para rodar o projeto em seu ambiente local.
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+### Pré-requisitos
+- [Node.js](https://nodejs.org/en) (versão 18 ou superior)
+- Um gerenciador de pacotes como `npm` ou `yarn`
+
+### Instalação e Execução
+
+1.  **Clone o repositório:**
+    ```bash
+    git clone https://github.com/TalitaMuller/bitbybit.git
+    cd bitbybit
+    ```
+
+2.  **Configure o Backend:**
+    - Navegue até a pasta do backend:
+        ```bash
+        cd backend
+        ```
+    - Instale as dependências:
+        ```bash
+        npm install
+        ```
+    - Crie um arquivo `.env` na raiz da pasta `backend` e adicione sua chave da API do Gemini:
+        ```
+        GEMINI_API_KEY="SUA_CHAVE_DE_API_AQUI"
+        ```
+
+3.  **Configure o Frontend:**
+    - Em um **novo terminal**, navegue até a pasta do frontend:
+        ```bash
+        cd frontend
+        ```
+    - Instale as dependências:
+        ```bash
+        npm install
+        ```
+
+4.  **Rode a Aplicação:**
+    - **No terminal do backend**, inicie o servidor:
+        ```bash
+        node server.js
+        ```
+        *O servidor estará rodando em `http://localhost:3001`.*
+    - **No terminal do frontend**, inicie a aplicação React:
+        ```bash
+        npm run dev
+        ```
+        *A aplicação estará acessível em `http://localhost:5173` (ou outra porta indicada).*
+
+
+## 👥 Equipe
+
+| Nome    | Função                               | GitHub                                     |
+| ------- | ------------------------------------ | ------------------------------------------ |
+| Kauê    | Designer                             | (https://github.com/KaueGarciaNunes)       |
+| Otávio  | Desenvolvedor Front-end              | (https://github.com/OtavioPeglow)          |
+| Talita  | Desenvolvedora Back-end              | (https://github.com/TalitaMuller)          |
+
+
