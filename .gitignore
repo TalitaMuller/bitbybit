@@ -1,7 +1,7 @@
 # Ignorar node_modules de qualquer pasta
 **/node_modules
 
-# Arquivos de ambiente (NUNCA envie sua chave de API!)
+# Arquivos de ambiente 
 **/backend/.env
 
 # Logs
