@@ -10,6 +10,13 @@ import { ComparisonBar } from './components/ui/ComparisonBar';
 import { PCBuilderPage } from './pages/PCBuilderPage';
 import { Chatbot } from './components/chatbot/Chatbot'; // 1. IMPORTAR O CHATBOT
 
+import { RegisterPage } from './pages/RegisterPage'; 
+import { LoginPage } from './pages/LoginPage';
+
+
+import { ProtectedRoute } from './components/layout/ProtectedRoute';
+import { MyBuildsPage } from './pages/MyBuildsPage';
+
 // Dados de exemplo
 export const ALL_PRODUCTS = [
   // --- Placas de Vídeo (GPU) ---
@@ -72,6 +79,7 @@ function App() {
 
       <main className="container mx-auto px-6 py-8">
         <Routes>
+          {/* Rotas Públicas */}
           <Route
             path="/"
             element={<HomePage
@@ -89,9 +97,25 @@ function App() {
               compareList={compareList}
             />}
           />
+          <Route path="/register" element={<RegisterPage />} />
+          <Route path="/login" element={<LoginPage />} />
+
+          {/* Rotas Protegidas */}
           <Route
             path="/montador"
-            element={<PCBuilderPage products={ALL_PRODUCTS} />}
+            element={
+              <ProtectedRoute 
+                element={<PCBuilderPage products={ALL_PRODUCTS} />} 
+              />
+            }
+          />
+          <Route
+            path="/my-builds" // 2. ROTA ADICIONADA
+            element={
+              <ProtectedRoute 
+                element={<MyBuildsPage />} 
+              />
+            }
           />
         </Routes>
       </main>
@@ -102,7 +126,7 @@ function App() {
         onRemove={handleToggleCompare}
       />
 
-      <Chatbot /> {/* 2. ADICIONAR O COMPONENTE AQUI */}
+      <Chatbot />
     </div>
   );
 }
