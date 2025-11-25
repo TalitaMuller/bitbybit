@@ -1,14 +1,12 @@
-// src/pages/LoginPage.tsx
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { useAuth } from '../context/AuthContext'; // 1. Importe o hook!
+import { useAuth } from '../context/AuthContext'; 
 
 export const LoginPage: React.FC = () => {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [message, setMessage] = useState<{ type: 'error', text: string } | null>(null);
     
-    // 2. Pegue a função de login e o estado de loading do contexto
     const { login, isLoading } = useAuth();
     
     const handleSubmit = async (e: React.FormEvent) => {
@@ -16,9 +14,7 @@ export const LoginPage: React.FC = () => {
         setMessage(null);
 
         try {
-            // 3. Chame a função de login do contexto!
             await login(email, password);
-            // O redirecionamento já é feito dentro da função 'login'
             
         } catch (error: any) {
             setMessage({ type: 'error', text: error.message || 'Erro desconhecido' });
@@ -37,7 +33,7 @@ export const LoginPage: React.FC = () => {
                         onChange={(e) => setEmail(e.target.value)}
                         required
                         className="w-full mt-1 bg-gray-700 rounded-md p-3 text-white placeholder-gray-400 focus:ring-cyan-500 focus:border-cyan-500"
-                        disabled={isLoading} // 4. Desabilita o campo
+                        disabled={isLoading} 
                     />
                 </div>
                 <div>
@@ -48,13 +44,13 @@ export const LoginPage: React.FC = () => {
                         onChange={(e) => setPassword(e.target.value)}
                         required
                         className="w-full mt-1 bg-gray-700 rounded-md p-3 text-white placeholder-gray-400 focus:ring-cyan-500 focus:border-cyan-500"
-                        disabled={isLoading} // 4. Desabilita o campo
+                        disabled={isLoading} 
                     />
                 </div>
                 <button 
                     type="submit" 
                     className="w-full bg-cyan-500 text-white font-bold py-3 px-4 rounded-md hover:bg-cyan-600 transition-colors disabled:bg-gray-600"
-                    disabled={isLoading} // 5. Desabilita o botão
+                    disabled={isLoading} 
                 >
                     {isLoading ? 'Entrando...' : 'Entrar'}
                 </button>

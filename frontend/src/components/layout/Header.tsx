@@ -1,10 +1,9 @@
-// src/components/layout/Header.tsx
 import React from 'react';
 import { Link, NavLink } from 'react-router-dom';
-import { useAuth } from '../../context/AuthContext'; // 1. Importe o hook
+import { useAuth } from '../../context/AuthContext'; 
 
 export const Header: React.FC = () => {
-    const { user, logout } = useAuth(); // 2. Pegue o usuário e a função de logout
+    const { user, logout } = useAuth(); 
 
     const activeLinkStyle = {
         color: '#2dd4bf',
@@ -35,9 +34,9 @@ export const Header: React.FC = () => {
                         Montador de PC
                     </NavLink>
 
-                    {/* --- A MÁGICA ACONTECE AQUI --- */}
+                    
                     {user ? (
-                        // 3. Se o usuário ESTIVER logado
+                        
                         <>
                             <NavLink
                                 to="/my-builds"
@@ -57,7 +56,6 @@ export const Header: React.FC = () => {
                             </button>
                         </>
                     ) : (
-                        // 4. Se o usuário NÃO ESTIVER logado
                         <>
                             <NavLink
                                 to="/login"

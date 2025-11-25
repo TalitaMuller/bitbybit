@@ -1,13 +1,12 @@
-// db.js
-const mysql = require('mysql2/promise'); // MUDANÇA: de 'import' para 'const require'
-require('dotenv/config');                // MUDANÇA: de 'import' para 'require'
+const mysql = require('mysql2/promise'); 
+require('dotenv/config');                
 
-// O resto do código é igual
+
 const pool = mysql.createPool({
-    host: process.env.DB_HOST || 'localhost',
-    user: process.env.DB_USER || 'root',
-    password: process.env.DB_PASSWORD || 'seu-password-aqui',
-    database: process.env.DB_NAME || 'bitbybit_db',
+    host: process.env.DB_HOST,
+    user: process.env.DB_USER,
+    password: process.env.DB_PASSWORD, 
+    database: process.env.DB_NAME, 
     waitForConnections: true,
     connectionLimit: 10,
     queueLimit: 0
@@ -23,4 +22,4 @@ const pool = mysql.createPool({
     }
 })();
 
-module.exports = pool; // MUDANÇA: de 'export default pool' para 'module.exports'
+module.exports = pool; 

@@ -1,4 +1,3 @@
-// src/components/ui/ProductCard.tsx
 import React from 'react';
 import { Link } from 'react-router-dom';
 
@@ -8,7 +7,6 @@ interface ProductCardProps {
     price: number;
     store: string;
     imageUrl: string;
-    // Novas props
     isSelectedForCompare: boolean;
     onToggleCompare: (id: number) => void;
 }
@@ -16,12 +14,11 @@ interface ProductCardProps {
 export const ProductCard: React.FC<ProductCardProps> = ({ id, name, price, store, imageUrl, isSelectedForCompare, onToggleCompare }) => {
 
     const handleCompareClick = (e: React.MouseEvent) => {
-        e.preventDefault(); // Impede a navegação ao clicar no botão
-        e.stopPropagation(); // Impede que o evento se propague para o Link
+        e.preventDefault(); 
+        e.stopPropagation(); 
         onToggleCompare(id);
     };
 
-    // Define o estilo do botão com base na seleção
     const buttonStyle = isSelectedForCompare
         ? "bg-cyan-500 text-white"
         : "bg-gray-700 text-gray-300 hover:bg-gray-600";

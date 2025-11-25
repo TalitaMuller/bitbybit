@@ -1,13 +1,10 @@
-// src/components/ui/FilterSidebar.tsx
 import React from 'react';
 
 interface FilterSidebarProps {
-    // Para os filtros de loja
     stores: string[];
     selectedStores: string[];
     onStoreChange: (store: string) => void;
 
-    // Para os filtros de preço
     priceRange: { min: string; max: string };
     onPriceChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
 }
@@ -23,7 +20,6 @@ export const FilterSidebar: React.FC<FilterSidebarProps> = ({
         <aside className="w-full md:w-64 bg-gray-800 p-6 rounded-lg self-start">
             <h3 className="text-xl font-bold text-white mb-4">Filtros</h3>
 
-            {/* Seção de Lojas */}
             <div>
                 <h4 className="font-semibold text-white mb-2">Lojas</h4>
                 <div className="space-y-2">
@@ -43,7 +39,7 @@ export const FilterSidebar: React.FC<FilterSidebarProps> = ({
 
             <hr className="my-6 border-gray-700" />
 
-            {/* Seção de Preço */}
+
             <div>
                 <h4 className="font-semibold text-white mb-2">Faixa de Preço</h4>
                 <div className="flex items-center space-x-2">

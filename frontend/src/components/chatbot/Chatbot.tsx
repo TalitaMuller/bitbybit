@@ -1,4 +1,3 @@
-// src/components/chatbot/Chatbot.tsx
 import React, { useState } from 'react';
 import { ChatBubble } from './ChatBubble';
 import { ChatWindow } from './ChatWindow';
@@ -50,9 +49,7 @@ export const Chatbot: React.FC = () => {
         }
     };
 
-    // A CORREÇÃO PRINCIPAL ESTÁ AQUI
-    // Adicionamos `?.text || ''` para garantir que, se a mensagem for inválida,
-    // ela se torne um texto vazio em vez de `undefined`, evitando o crash.
+
     const chatWindowMessages = messages.map(msg => ({
         sender: msg.role === 'user' ? 'user' : 'bot',
         text: msg.parts[0]?.text || ''

@@ -1,4 +1,3 @@
-// src/pages/HomePage.tsx
 import React, { useState, useMemo } from 'react';
 import { SearchBar } from '../components/ui/SearchBar';
 import { ProductCard } from '../components/ui/ProductCard';
@@ -15,13 +14,11 @@ interface Product {
 
 interface HomePageProps {
     products: Product[];
-    // Novas props
     compareList: number[];
     onToggleCompare: (id: number) => void;
 }
 
 export const HomePage: React.FC<HomePageProps> = ({ products, compareList, onToggleCompare }) => {
-    // ... (toda a lógica de filtros e ordenação que já fizemos continua aqui)
     const [searchTerm, setSearchTerm] = useState('');
     const [sortOrder, setSortOrder] = useState('default');
     const [selectedStores, setSelectedStores] = useState<string[]>([]);
@@ -46,7 +43,6 @@ export const HomePage: React.FC<HomePageProps> = ({ products, compareList, onTog
 
     const handleStoreChange = (store: string) => { setSelectedStores(prev => prev.includes(store) ? prev.filter(s => s !== store) : [...prev, store]); };
     const handlePriceChange = (e: React.ChangeEvent<HTMLInputElement>) => { setPriceRange(prev => ({ ...prev, [e.target.name]: e.target.value })); };
-    // ... (fim da lógica existente)
 
     return (
         <div className="flex flex-col md:flex-row gap-8">
@@ -76,7 +72,6 @@ export const HomePage: React.FC<HomePageProps> = ({ products, compareList, onTog
                                 price={product.price}
                                 store={product.store}
                                 imageUrl={product.imageUrl}
-                                // Passando as novas props para o card
                                 isSelectedForCompare={compareList.includes(product.id)}
                                 onToggleCompare={onToggleCompare}
                             />

@@ -1,6 +1,5 @@
-// src/components/ui/PartSelector.tsx
 import React, { useState } from 'react';
-import type { Product } from '../../types'; // <-- Importa o tipo correto
+import type { Product } from '../../types';
 
 interface PartSelectorProps {
     category: string;
@@ -64,7 +63,7 @@ export const PartSelector: React.FC<PartSelectorProps> = ({
                 </div>
             </div>
 
-            {/* Modal para seleção de peças */}
+            
             {isModalOpen && (
                 <div className="fixed inset-0 bg-black/60 flex items-center justify-center z-30 p-4">
                     <div className="bg-gray-800 rounded-lg shadow-xl w-full max-w-4xl max-h-[80vh] flex flex-col">

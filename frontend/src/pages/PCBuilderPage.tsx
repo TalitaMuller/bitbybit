@@ -1,17 +1,14 @@
-// src/pages/PCBuilderPage.tsx
 import React, { useState, useMemo } from 'react';
 import { PartSelector } from '../components/ui/PartSelector';
 import { useAuth } from '../context/AuthContext';
 import type { Product } from '../types';
 
-// Definindo a "forma" de um produto
 
 
 interface PCBuilderPageProps {
     products: Product[];
 }
 
-// Definindo os slots de componentes para a nossa build
 const componentSlots = [
     'Processador',
     'Cooler', 
@@ -25,15 +22,13 @@ const componentSlots = [
 ];
 
 export const PCBuilderPage: React.FC<PCBuilderPageProps> = ({ products }) => {
-    // Estado para guardar o produto selecionado para cada slot
     const [selectedParts, setSelectedParts] = useState<Record<string, Product | null>>({});
 
-    const { token } = useAuth(); // 1. Pegar o token e o usuário logado
-    const [buildName, setBuildName] = useState('Minha Build'); // 2. Estado para o nome da build
+    const { token } = useAuth(); 
+    const [buildName, setBuildName] = useState('Minha Build'); 
     const [isSaving, setIsSaving] = useState(false);
     const [message, setMessage] = useState<{ type: 'success' | 'error', text: string } | null>(null);
 
-    // Função para selecionar uma peça
     const handleSelectPart = (category: string, product: Product) => {
         setSelectedParts(prev => ({
             ...prev,
@@ -41,7 +36,6 @@ export const PCBuilderPage: React.FC<PCBuilderPageProps> = ({ products }) => {
         }));
     };
 
-    // Função para remover uma peça
     const handleRemovePart = (category: string) => {
         setSelectedParts(prev => ({
             ...prev,
@@ -49,12 +43,11 @@ export const PCBuilderPage: React.FC<PCBuilderPageProps> = ({ products }) => {
         }));
     };
 
-    // Calcula o preço total da build
     const totalPrice = useMemo(() => {
         return Object.values(selectedParts).reduce((total, part) => {
             return total + (part?.price || 0);
         }, 0);
-    }, [selectedParts]); // <--- O PONTO E VÍRGULA FOI ADICIONADO AQUI
+    }, [selectedParts]); 
 
     const handleSaveBuild = async () => {
         if (!token) {
@@ -62,10 +55,8 @@ export const PCBuilderPage: React.FC<PCBuilderPageProps> = ({ products }) => {
             return;
         }
 
-        // Transforma o objeto { 'Processador': {...}, 'Placa de Vídeo': {...} }
-        // em um array de peças que o backend espera
         const partsToSave = Object.entries(selectedParts)
-            .filter(([_, part]) => part !== null) // Filtra slots vazios
+            .filter(([_, part]) => part !== null) 
             .map(([category, part]) => ({
                 category: category,
                 product_id: part!.id,
@@ -85,7 +76,6 @@ export const PCBuilderPage: React.FC<PCBuilderPageProps> = ({ products }) => {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
-                    // AQUI ESTÁ A MÁGICA: Enviamos o token de autorização
                     'Authorization': `Bearer ${token}` 
                 },
                 body: JSON.stringify({
@@ -120,7 +110,6 @@ export const PCBuilderPage: React.FC<PCBuilderPageProps> = ({ products }) => {
                 </div>
             </div>
 
-            {/* --- NOVO CAMPO PARA NOME DA BUILD E BOTÃO SALVAR --- */}
             <div className="bg-gray-900/50 p-4 rounded-lg flex items-center justify-between mb-6">
                 <input
                     type="text"
@@ -142,7 +131,6 @@ export const PCBuilderPage: React.FC<PCBuilderPageProps> = ({ products }) => {
                     {message.text}
                 </p>
             )}
-            {/* --- FIM DA NOVA SEÇÃO --- */}
 
             <div className="space-y-4">
                 {componentSlots.map(category => (

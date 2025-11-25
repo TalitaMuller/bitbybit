@@ -1,14 +1,11 @@
-// chatbotRoute.js
 const express = require('express');
 const { GoogleGenerativeAI } = require('@google/generative-ai');
-require('dotenv').config(); // Carrega as variáveis do .env
+require('dotenv').config(); 
 
-const router = express.Router(); // Usamos o Router do Express, e não um novo app
+const router = express.Router(); 
 
-// Inicializa o cliente do Gemini
 const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
 
-// O prompt de sistema continua o mesmo
 const systemInstruction = `
   Você é o Byb, um assistente de IA especialista em hardware e software de computadores.
   Sua personalidade é amigável, prestativa e um pouco "nerd" de forma entusiasmada.
@@ -20,7 +17,6 @@ const systemInstruction = `
   Por exemplo: "Essa é uma ótima pergunta, mas meu foco é em bits e bytes! Que tal falarmos sobre qual processador se encaixaria melhor no seu setup?".
 `;
 
-// A rota agora é '/', porque o '/api/chat' já foi definido no server.js
 router.post('/', async (req, res) => {
     try {
         const { history } = req.body;
@@ -52,5 +48,5 @@ router.post('/', async (req, res) => {
     }
 });
 
-// Exportamos o router para que o server.js possa usá-lo
+
 module.exports = router;

@@ -1,4 +1,3 @@
-// src/components/ui/ComparisonBar.tsx
 import React from 'react';
 import { Link } from 'react-router-dom';
 
@@ -11,7 +10,7 @@ interface ComparisonBarProps {
 
 export const ComparisonBar: React.FC<ComparisonBarProps> = ({ products, compareList, onRemove }) => {
     if (compareList.length === 0) {
-        return null; // Não mostra nada se a lista estiver vazia
+        return null; 
     }
 
     const selectedProducts = products.filter(p => compareList.includes(p.id));

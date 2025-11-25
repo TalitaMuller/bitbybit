@@ -1,4 +1,3 @@
-// src/components/chatbot/ChatBubble.tsx
 import React from 'react';
 import roboIcone from '../../assets/robo.png';
 

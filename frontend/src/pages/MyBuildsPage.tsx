@@ -1,9 +1,7 @@
-// src/pages/MyBuildsPage.tsx
 import React, { useState, useEffect } from 'react';
 import { useAuth } from '../context/AuthContext';
-import type { Product } from '../types'; // Reutilizamos nosso tipo Product
+import type { Product } from '../types'; 
 
-// Define a "forma" de um componente salvo
 interface BuildComponent {
     build_id: number;
     category: string;
@@ -11,7 +9,6 @@ interface BuildComponent {
     product_name: string;
 }
 
-// Define a "forma" da build completa
 interface Build {
     id: number;
     name: string;
@@ -23,7 +20,7 @@ export const MyBuildsPage: React.FC = () => {
     const [builds, setBuilds] = useState<Build[]>([]);
     const [isLoading, setIsLoading] = useState(true);
     const [error, setError] = useState<string | null>(null);
-    const { token } = useAuth(); // Pega o token para autenticação
+    const { token } = useAuth(); 
 
     useEffect(() => {
         const fetchBuilds = async () => {
@@ -54,7 +51,7 @@ export const MyBuildsPage: React.FC = () => {
         };
 
         fetchBuilds();
-    }, [token]); // Roda o efeito sempre que o token mudar
+    }, [token]); 
 
     if (isLoading) {
         return <div className="text-center text-white">Carregando builds...</div>;

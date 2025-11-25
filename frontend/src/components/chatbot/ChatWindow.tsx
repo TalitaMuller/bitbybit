@@ -1,4 +1,3 @@
-// src/components/chatbot/ChatWindow.tsx
 import React, { useState, useRef, useEffect } from 'react';
 import ReactMarkdown from 'react-markdown';
 
@@ -42,12 +41,12 @@ export const ChatWindow: React.FC<ChatWindowProps> = ({ messages, onSendMessage,
                 <div className="flex items-center gap-4">
                     <button onClick={() => setIsFullScreen(!isFullScreen)} className="text-gray-400 hover:text-white">
                         {isFullScreen ? (
-                            // --- ÍCONE CORRIGIDO E DEFINITIVO ---
+                            
                             <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 14h4v4M20 10h-4V6" />
                             </svg>
                         ) : (
-                            // Ícone de "expandir"
+                            
                             <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 8V4h4m12 4V4h-4M4 16v4h4m12-4v4h-4" />
                             </svg>

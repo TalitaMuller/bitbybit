@@ -1,4 +1,3 @@
-// src/pages/RegisterPage.tsx
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 
@@ -28,7 +27,6 @@ export const RegisterPage: React.FC = () => {
 
             setMessage({ type: 'success', text: 'Usuário cadastrado com sucesso! Redirecionando para o login...' });
             
-            // Redireciona para o login após 2 segundos
             setTimeout(() => {
                 navigate('/login');
             }, 2000);
