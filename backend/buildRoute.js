@@ -1,10 +1,10 @@
 const express = require('express');
 const router = express.Router();
 const pool = require('./db.js');
-const authenticateToken = require('./authMiddleware.js'); 
-
+const authenticateToken = require('./authMiddleware.js');
 
 router.post('/save', authenticateToken, async (req, res) => {
+    let connection; 
     try {
         const userId = req.user.userId; 
         
@@ -14,7 +14,7 @@ router.post('/save', authenticateToken, async (req, res) => {
             return res.status(400).json({ message: 'A build não pode estar vazia.' });
         }
 
-        const connection = await pool.getConnection();
+        connection = await pool.getConnection();
         await connection.beginTransaction();
 
         const [buildResult] = await connection.query(
@@ -37,17 +37,14 @@ router.post('/save', authenticateToken, async (req, res) => {
         );
 
         await connection.commit();
-        connection.release();
-
         res.status(201).json({ message: 'Build salva com sucesso!', buildId: newBuildId });
 
     } catch (error) {
-        if (connection) {
-            await connection.rollback();
-            connection.release();
-        }
+        if (connection) await connection.rollback();
         console.error('Erro ao salvar build:', error);
         res.status(500).json({ message: 'Erro interno no servidor.' });
+    } finally {
+        if (connection) connection.release();
     }
 });
 
@@ -91,5 +88,26 @@ router.get('/', authenticateToken, async (req, res) => {
     }
 });
 
+router.delete('/:id', authenticateToken, async (req, res) => {
+    try {
+        const userId = req.user.userId;
+        const buildId = req.params.id;
+
+        const [result] = await pool.query(
+            'DELETE FROM builds WHERE id = ? AND user_id = ?',
+            [buildId, userId]
+        );
+
+        if (result.affectedRows === 0) {
+            return res.status(404).json({ message: 'Build não encontrada ou você não tem permissão.' });
+        }
+
+        res.status(200).json({ message: 'Build deletada com sucesso.' });
+
+    } catch (error) {
+        console.error('Erro ao deletar build:', error);
+        res.status(500).json({ message: 'Erro interno no servidor.' });
+    }
+});
 
 module.exports = router;
