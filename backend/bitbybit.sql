@@ -102,163 +102,163 @@ CREATE TABLE products (
 INSERT INTO products (category, name, price, store, image_url, link, description) VALUES 
 
 -- === PROCESSADORES (CPU) ===
-('Processador', 'AMD Ryzen 5 5500 3.6GHz', 599.90, 'Pichau', 
+('Processador', 'Processador AMD Ryzen 5 5500 3.6GHz', 599.90, 'Pichau', 
  'https://media.pichau.com.br/media/catalog/product/cache/2f958555330323e505eba7ce930bdf27/1/0/100-100000457box-br.jpg', 
  'https://www.pichau.com.br/processador-amd-ryzen-5-5500-6-core-12-threads-3-6ghz-4-2ghz-turbo-cache-19mb-am4-100-100000457box-br?gad_source=1&gad_campaignid=17412712029&gbraid=0AAAAADvAK934nUYfOlxJYIH_je7TAiKzV&gclid=Cj0KCQiA9OnJBhD-ARIsAPV51xMW8jHyo6Xjfpc6py25iMNGcqU0UgD7gmOOnStfH98cZldfewv2lFgaAkKAEALw_wcB', 
  'Processador AMD Ryzen 5™ 5500 com 6 núcleos e 12 threads, Socket AM4 e temperatura máxima 90°C.');--
 
 INSERT INTO products (category, name, price, store, image_url, link, description) VALUES 
-('Processador', 'AMD Ryzen 7 5700X3D', 1399.99, 'KaBuM!', 
+('Processador', 'Processador AMD Ryzen 7 5700X3D', 1399.99, 'KaBuM!', 
  'https://images9.kabum.com.br/produtos/fotos/520369/processador-amd-ryzen-7-5700x3d-3-6-ghz-4-1ghz-max-turbo-cache-4mb-8-nucleos-16-threads-am4-video-integrado-100-100001503wof_1708023990_gg.jpg', 
  'https://www.kabum.com.br/produto/520369/processador-amd-ryzen-7-5700x3d-3-0-ghz-4-1ghz-max-turbo-cache-4mb-8-nucleos-16-threads-am4-100-100001503wof', 
  'Processador de alto desempenho para gamers com tecnologia 3D V-Cache.'); --
 
 INSERT INTO products (category, name, price, store, image_url, link, description) VALUES 
-('Processador', 'AMD Ryzen 5 8500G', 999.90, 'Terabyte', 
+('Processador', 'Processador AMD Ryzen 5 8500G', 999.90, 'Terabyte', 
  'https://img.terabyteshop.com.br/produto/g/processador-amd-ryzen-5-8500g-35ghz-50ghz-turbo-6-cores-12-threads-am5-com-cooler-amd-wraith-stealth-100-100001491box_186183.jpg', 
  'https://www.terabyteshop.com.br/produto/27321/processador-amd-ryzen-5-8500g-35ghz-50ghz-turbo-6-cores-12-threads-am5-com-cooler-amd-wraith-stealth-100-100001491box?gad_source=1&gad_campaignid=16775150533&gbraid=0AAAAADm8AXTSIvO9PGKRpQe7TiYl432LZ&gclid=Cj0KCQiA9OnJBhD-ARIsAPV51xOfaXt2zEMLppk6ux06JeGT4KSUraA-7rYw9iveuHEedg5IWtaebh4aAk3MEALw_wcB', 
  'Ryzen 5 8500G com 6 núcleos, ideal para próxima geração de jogos e tarefas multithread.'); --
 
 INSERT INTO products (category, name, price, store, image_url, link, description) VALUES 
-('Processador', 'AMD Ryzen 7 8700F', 1699.90, 'Pichau', 
+('Processador', 'Processador AMD Ryzen 7 8700F', 1699.90, 'Pichau', 
  'https://media.pichau.com.br/media/catalog/product/cache/2f958555330323e505eba7ce930bdf27/1/0/100-100001590box014210120.jpg', 
  'https://www.pichau.com.br/processador-amd-ryzen-7-8700f-8-cores-16-threads-4-1ghz-5-0ghz-turbo-cache-16mb-am5-100-100001590box?gad_source=1&gad_campaignid=17412712029&gbraid=0AAAAADvAK934nUYfOlxJYIH_je7TAiKzV&gclid=Cj0KCQiA9OnJBhD-ARIsAPV51xOXOOaRKYlZKTs-lW4jPT7vuiELEfFDn0SG1Tbx5DcLMH8uI-i36T4aAqM2EALw_wcB', 
  'Processador de 8 núcleos para plataforma AM5, excepcional para jogos e criação de conteúdo.');--
 
 INSERT INTO products (category, name, price, store, image_url, link, description) VALUES 
-('Processador', 'AMD Ryzen 9 9950X3D', 4999.00, 'KaBuM!', 
+('Processador', 'Processador AMD Ryzen 9 9950X3D', 4999.00, 'KaBuM!', 
  'https://images1.kabum.com.br/produtos/fotos/609951/amd-ryzen-9-9950x-16-core_1723553287_gg.jpg', 
  'https://www.kabum.com.br/produto/609951/processador-amd-ryzen-9-9950x-4-3-ghz-5-7-ghz-cache-64-mb-16-nucleos-32-threads-am5-100-100001277wof', 
  'A melhor CPU para desktop de 16 núcleos com tecnologia AMD 3D V-Cache™ de 2ª geração.');--
 
 INSERT INTO products (category, name, price, store, image_url, link, description) VALUES 
-('Processador', 'Intel Core i7-13700F', 2399.90, 'KaBuM!', 
+('Processador', 'Processador Intel Core i7-13700F', 2399.90, 'KaBuM!', 
  'https://images3.kabum.com.br/produtos/fotos/405763/processador-intel-core-i7-13700f-5-2ghz-max-turbo-cache-30mb-16-nucleos-24-threads-lga-1700-bx8071513700f_1672684860_gg.jpg', 
  'https://www.kabum.com.br/produto/405763/processador-intel-core-i7-13700f-5-2ghz-max-turbo-cache-30mb-16-nucleos-24-threads-lga-1700-bx8071513700f?gclsrc=aw.ds&&utm_id=22429436063&gad_source=1&gad_campaignid=22429436063&gbraid=0AAAAADx-HyGk7dfJ81oQC7_cY4wD6CVSx&gclid=Cj0KCQiA9OnJBhD-ARIsAPV51xMvUoMcMtjTIFBrRRdCV81uUnsUWhQjlsoTFxUAuA-vUXXEhJFQXSIaAvFxEALw_wcB', 
  'Otimizado para jogadores e produtividade com alto desempenho. Requer placa de vídeo.');--
 
 INSERT INTO products (category, name, price, store, image_url, link, description) VALUES 
-('Processador', 'Intel Core i5-13400F', 1299.90, 'KaBuM!', 
+('Processador', 'Processador Intel Core i5-13400F', 1299.90, 'KaBuM!', 
 'https://images6.kabum.com.br/produtos/fotos/405766/processador-intel-core-i5-13400f-4-6ghz-max-turbo-cache-20mb-10-nucleos-16-threads-lga-1700-bx8071513400f_1672752804_gg.jpg',
  'https://www.kabum.com.br/produto/405766/processador-intel-core-i5-13400f-4-6ghz-max-turbo-cache-20mb-10-nucleos-16-threads-lga-1700-bx8071513400f', 
  'Custo-benefício da 13ª geração, com 10 núcleos e compatível com chipsets Série 600 e 700.');--
 
 INSERT INTO products (category, name, price, store, image_url, link, description) VALUES 
-('Processador', 'Intel Core Ultra 7 265K', 3299.90, 'KaBuM!', 
+('Processador', 'Processador Intel Core Ultra 7 265K', 3299.90, 'KaBuM!', 
  'https://images8.kabum.com.br/produtos/fotos/645178/processador-intel-core-ultra-7-265k-5-5ghz-ate-20-nucleos-com-suporte-a-pcie-5-0-e-4-0-e-suporte-a-ddr5-bx80768265k_1728593092_gg.jpg', 
  'https://www.kabum.com.br/produto/645178/processador-intel-core-ultra-7-265k-5-5ghz-ate-20-nucleos-com-suporte-a-pcie-5-0-e-4-0-e-suporte-a-ddr5-bx80768265k?gclsrc=aw.ds&&utm_id=22429436063&gad_source=1&gad_campaignid=22429436063&gbraid=0AAAAADx-HyGk7dfJ81oQC7_cY4wD6CVSx&gclid=Cj0KCQiA9OnJBhD-ARIsAPV51xOSeBInsGGd6w8gjlmrIrnd-Ih-CBonLMh_B3cManNUIgHDDuYvws8aAkj3EALw_wcB', 
  'Redefine os limites de desempenho com 20 Cores e frequência turbo de 5.5 GHz.'); --
 
 -- === COOLERS ===
 INSERT INTO products (category, name, price, store, image_url, link, description) VALUES 
-('Cooler', 'DeepCool AK400', 179.90, 'Terabyte', 
+('Cooler', 'Cooler DeepCool AK400', 179.90, 'Terabyte', 
  'https://img.terabyteshop.com.br/produto/g/cooler-para-processador-deepcool-ak400-120mm-intel-amd-r-ak400-bknnmn-g-1_144162.jpg', 
  'https://www.terabyteshop.com.br/produto/21648/cooler-para-processador-deepcool-ak400-120mm-intel-amd-r-ak400-bknnmn-g-1?gad_source=1&gad_campaignid=16111800134&gbraid=0AAAAADm8AXT1hPFsPTjEvRx5Ce9kQgxbB&gclid=Cj0KCQiA9OnJBhD-ARIsAPV51xO-hujZectqiAkFJInVg_DiAuzEEz3s4LGTnTqFZv4S8cbfI5oj5XAaAh5lEALw_wcB', 
  'Refrigerador de CPU altamente compatível com quatro torres de tubos de calor e ventoinha silenciosa.'); --
 
 INSERT INTO products (category, name, price, store, image_url, link, description) VALUES 
-('Cooler', 'Water Cooler NZXT Kraken Elite 240 RGB', 1599.90, 'Terabyte', 
+('Cooler', 'Cooler Water Cooler NZXT Kraken Elite 240 RGB', 1599.90, 'Terabyte', 
  'https://img.terabyteshop.com.br/produto/g/water-cooler-nzxt-kraken-elite-240-rgb-240mm-aio-lcd-display-white-intel-amd-rl-kr24e-w1_176020.jpg', 
  'https://www.terabyteshop.com.br/produto/25692/water-cooler-nzxt-kraken-elite-240-rgb-240mm-aio-lcd-display-white-intel-amd-rl-kr24e-w1?srsltid=AfmBOoqdzlm3G_I0PQgqw54DgB30QR-o9a_oXWoDB28Swd6XpALvbUW-', 
  'Resfriamento de alto desempenho com display LCD para exibir GIFs e métricas do PC.');--
 
 INSERT INTO products (category, name, price, store, image_url, link, description) VALUES 
-('Cooler', 'Water Cooler Pcyes Sangue Frio 3 240mm', 349.90, 'KaBuM!', 
- 'https://images.kabum.com.br/produtos/fotos/609585/water-cooler-pcyes-sangue-frio-3-240mm-amd-intel-branco-wcsf3240wgbr_1724096043_gg.jpg', 
- 'https://www.kabum.com.br/produto/609585/water-cooler-pcyes-sangue-frio-3-240mm-amd-intel-branco-wcsf3240wgbr', 
- 'Combina desempenho superior e qualidade incomparável com design inovador White Ghost.');
+('Cooler', 'Cooler Water Cooler Pcyes Sangue Frio 3 240mm', 349.90, 'KaBuM!', 
+ 'https://images2.kabum.com.br/produtos/fotos/609582/water-cooler-pcyes-sangue-frio-3-240mm-amd-e-intel-preto-wcsf3240br_1722540796_gg.jpg', 
+ 'https://www.kabum.com.br/produto/609582/water-cooler-pcyes-sangue-frio-3-240mm-amd-intel-preto-wcsf3240br', 
+ 'Combina desempenho superior e qualidade incomparável com design inovador White Ghost.');--
 
 INSERT INTO products (category, name, price, store, image_url, link, description) VALUES 
-('Cooler', 'Water Cooler Gigabyte Aorus 360 RGB', 1199.90, 'KaBuM!', 
- 'https://images.kabum.com.br/produtos/fotos/508354/water-cooler-gigabyte-aorus-360-rgb-360mm-amd-intel-preto-gp-aorus-waterforce-ii-360_1703698777_gg.jpg', 
- 'https://www.kabum.com.br/produto/508354/water-cooler-gigabyte-aorus-360-rgb-360mm-amd-intel-preto-gp-aorus-waterforce-ii-360', 
- 'Para entusiastas que buscam máximo desempenho e personalização com resfriamento eficiente.');
+('Cooler', 'Cooler Water Cooler Gigabyte Aorus 360 RGB', 1199.90, 'KaBuM!', 
+ 'https://images4.kabum.com.br/produtos/fotos/508354/water-cooler-gigabyte-aorus-360-rgb-360mm-intel-amd-preto-gp-aorus-waterforce-ii-360_1721145499_gg.jpg', 
+ 'https://www.kabum.com.br/produto/508354/water-cooler-gigabyte-aorus-360-rgb-360mm-amd-intel-preto-gp-aorus-waterforce-ii-360?gclsrc=aw.ds&&utm_id=22429436048&gad_source=1&gad_campaignid=22429436048&gbraid=0AAAAADx-HyF26mjQQrJOKNZ9ApqvnTpQd&gclid=Cj0KCQiA9OnJBhD-ARIsAPV51xPvdzIHnfnOck3A-RRHoth7Z0EZodnawYdULFyU7ySvJpI3CFesIBcaAggSEALw_wcB', 
+ 'Para entusiastas que buscam máximo desempenho e personalização com resfriamento eficiente.');--
 
 INSERT INTO products (category, name, price, store, image_url, link, description) VALUES 
-('Cooler', 'Water Cooler Cooler Master MasterLiquid 360 Atmos', 1099.90, 'Pichau', 
- 'https://media.pichau.com.br/media/catalog/product/cache/2f958555330323e5f1dc3189736166e3/m/l/mlx-d36m-a25pz-r1.jpg', 
- 'https://www.pichau.com.br/water-cooler-cooler-master-masterliquid-360-atmos-rgb-360mm-preto-mlx-d36m-a25pz-r1', 
- 'Desempenho excepcionalmente silencioso com ventoinhas SickleFlow Edge.');
+('Cooler', 'Cooler Water Cooler Cooler Master MasterLiquid 360 Atmos', 1099.90, 'Pichau', 
+ 'https://media.pichau.com.br/media/catalog/product/cache/2f958555330323e505eba7ce930bdf27/m/l/mlx-d36m-a25pz-r145545.jpg', 
+ 'https://www.pichau.com.br/water-cooler-cooler-master-masterliquid-360-atmos-rgb-360mm-preto-mlx-d36m-a25pz-r1?gad_source=1&gad_campaignid=17426909414&gbraid=0AAAAADvAK91d2TTbh55dItdRuwnSeSIuH&gclid=Cj0KCQiA9OnJBhD-ARIsAPV51xN-ZzHu3KnIdMqTANA5_hg2xgjr2xM1xbthwGcq4l-L1KCIWr83jrYaAtsJEALw_wcB', 
+ 'Desempenho excepcionalmente silencioso com ventoinhas SickleFlow Edge.');--
 
 INSERT INTO products (category, name, price, store, image_url, link, description) VALUES 
-('Cooler', 'Water Cooler MSI MAG CoreLiquid A15 360', 799.90, 'Terabyte', 
- 'https://img.terabyteshop.com.br/produto/g/water-cooler-msi-mag-coreliquid-a15-360-argb-360mm-intel-amd-preto_199342.jpg', 
- 'https://www.terabyteshop.com.br/produto/35674/water-cooler-msi-mag-coreliquid-a15-360-argb-360mm-intel-amd-preto', 
- 'Design arrojado de inspiração militar com iluminação ARGB GEN2.');
+('Cooler', 'Cooler Water Cooler MSI MAG CoreLiquid A15 360', 799.90, 'Terabyte', 
+ 'https://img.terabyteshop.com.br/produto/g/water-cooler-msi-mag-coreliquid-a15-360-argb-360mm-intel-amd-preto_235593.jpg', 
+ 'https://www.terabyteshop.com.br/produto/35674/water-cooler-msi-mag-coreliquid-a15-360-argb-360mm-intel-amd-preto?srsltid=AfmBOoq0wUKQPInoF4GYBcGMi-lab-B6nD8Hs62W5Orr5E0pyC24eRAt', 
+ 'Design arrojado de inspiração militar com iluminação ARGB GEN2.');--
 
 -- === PLACAS MÃE ===
 INSERT INTO products (category, name, price, store, image_url, link, description) VALUES 
-('Placa Mãe', 'Asus B650M-AYW WIFI', 1299.90, 'KaBuM!', 
- 'https://images.kabum.com.br/produtos/fotos/919929/placa-mae-asus-b650m-ayw-wifi-ddr5-socket-amd-am5-m-atx-chipset-amd-b650-b650m-ayw-wifi_1727788390_gg.jpg', 
- 'https://www.kabum.com.br/produto/919929/placa-mae-asus-b650m-ayw-wifi-ddr5-socket-amd-am5-m-atx-chipset-amd-b650-b650m-ayw-wifi', 
- 'Desempenho de última geração, otimizada para Ryzen e com conectividade Wi-Fi 6.');
+('Placa Mãe', 'Placa Mãe Asus B650M-AYW WIFI', 1299.90, 'KaBuM!', 
+ 'https://images9.kabum.com.br/produtos/fotos/726929/placa-mae-asus-b650m-ayw-wi-fi-am5-matx-ddr5-wi-fi-bluetooth-90mb1ki0-m0eay0_1753876129_gg.jpg', 
+ 'https://www.kabum.com.br/produto/726929/placa-mae-asus-b650m-ayw-wi-fi-am5-matx-ddr5-wi-fi-bluetooth-90mb1ki0-m0eay0', 
+ 'Desempenho de última geração, otimizada para Ryzen e com conectividade Wi-Fi 6.');--
 
 INSERT INTO products (category, name, price, store, image_url, link, description) VALUES 
-('Placa Mãe', 'Pichau Chronos B550M-CR', 599.90, 'Pichau', 
- 'https://media.pichau.com.br/media/catalog/product/cache/2f958555330323e5f1dc3189736166e3/p/c/pch-b550m-cr-5.jpg', 
- 'https://www.pichau.com.br/placa-mae-pichau-chronos-b550m-cr-ddr4-socket-amd-am4-m-atx-chipset-amd-b550-pch-b550m-cr', 
- 'Estabilidade e potência para processadores AMD Ryzen séries 3000 a 5000.');
+('Placa Mãe', 'Placa Mãe Pichau Chronos B550M-CR', 599.90, 'Pichau', 
+ 'https://media.pichau.com.br/media/catalog/product/cache/2f958555330323e505eba7ce930bdf27/p/c/pch-b550m-crv136565551.jpg', 
+ 'https://www.pichau.com.br/placa-mae-pichau-chronos-b550m-cr-ddr4-socket-amd-am4-m-atx-chipset-amd-b550-pch-b550m-cr?gad_source=1&gad_campaignid=17426025554&gbraid=0AAAAADvAK91EsvY64NCnLB1RpwIlW519_&gclid=Cj0KCQiA9OnJBhD-ARIsAPV51xNPuY07pMUdKLp1aH5M9l4aAnG2Ensg2rlvHlU05qZM7eprlQYyOTgaAkX3EALw_wcB', 
+ 'Estabilidade e potência para processadores AMD Ryzen séries 3000 a 5000.');--
 
 INSERT INTO products (category, name, price, store, image_url, link, description) VALUES 
-('Placa Mãe', 'Gigabyte B760M Aorus Elite', 1199.90, 'Pichau', 
- 'https://media.pichau.com.br/media/catalog/product/cache/2f958555330323e5f1dc3189736166e3/b/7/b760m-aorus-elite-box.jpg', 
- 'https://www.pichau.com.br/placa-mae-gigabyte-b760m-aorus-elite-ddr5-socket-lga-1700-m-atx-chipset-intel-b760-b760m-aorus-elite', 
- 'Suporte a memórias DDR5, PCIe 4.0 x4 M.2 e LAN 2.5G.');
+('Placa Mãe', 'Placa Mãe Gigabyte B760M Aorus Elite', 1199.90, 'Pichau', 
+ 'https://media.pichau.com.br/media/catalog/product/cache/2f958555330323e505eba7ce930bdf27/b/7/b760m-aorus-elite4.jpg', 
+ 'https://www.pichau.com.br/placa-mae-gigabyte-b760m-aorus-elite-ddr5-socket-lga-1700-m-atx-chipset-intel-b760-b760m-aorus-elite?gad_source=1&gad_campaignid=17426025554&gbraid=0AAAAADvAK91EsvY64NCnLB1RpwIlW519_&gclid=Cj0KCQiA9OnJBhD-ARIsAPV51xNvSslSm9TiVj7Aau-fmfV2A2y8OBwhyV6L_3dq2hE7nc_O1f2961gaAlGKEALw_wcB', 
+ 'Suporte a memórias DDR5, PCIe 4.0 x4 M.2 e LAN 2.5G.');--
 
 INSERT INTO products (category, name, price, store, image_url, link, description) VALUES 
-('Placa Mãe', 'ASRock X870 Steel Legend WiFi', 1999.90, 'Terabyte', 
- 'https://img.terabyteshop.com.br/produto/g/placa-mae-asrock-x870-steel-legend-wifi-chipset-x870-amd-am5-atx-ddr5_202888.jpg', 
- 'https://www.terabyteshop.com.br/produto/38517/placa-mae-asrock-x870-steel-legend-wifi-chipset-x870-amd-am5-atx-ddr5', 
- 'Sólida durabilidade e estética irresistível para entusiastas.');
+('Placa Mãe', 'Placa Mãe ASRock X870 Steel Legend WiFi', 1999.90, 'Terabyte', 
+ 'https://img.terabyteshop.com.br/produto/g/placa-mae-asrock-x870-steel-legend-wifi-chipset-x870-amd-am5-atx-ddr5_251116.jpg', 
+ 'https://www.terabyteshop.com.br/produto/38517/placa-mae-asrock-x870-steel-legend-wifi-chipset-x870-amd-am5-atx-ddr5?gad_source=1&gad_campaignid=20589845431&gbraid=0AAAAADm8AXSFrT_jqQmui7sFqkTNJxJnA&gclid=Cj0KCQiA9OnJBhD-ARIsAPV51xNiK1Lz8JkZbJ9a1pC9nggZqpI6gz3h85qgvp8oyG9lTDDiOn6wG8waAqo1EALw_wcB', 
+ 'Sólida durabilidade e estética irresistível para entusiastas.');--
 
 INSERT INTO products (category, name, price, store, image_url, link, description) VALUES 
-('Placa Mãe', 'Asus ROG Strix Z790-A Gaming WiFi II', 2599.90, 'Pichau', 
- 'https://media.pichau.com.br/media/catalog/product/cache/2f958555330323e5f1dc3189736166e3/r/o/rog-strix-z790-a-gaming-wifi-ii.jpg', 
- 'https://www.pichau.com.br/placa-mae-asus-rog-strix-z790-a-gaming-wifi-ii-ddr5-lga-1700-atx-chipset-intel-z790-rog-strix-z790-a-gaming-wifi-ii', 
- 'VRM robusto para Intel 14th Gen, PCIe 5.0 e WiFi 7.');
+('Placa Mãe', 'Placa Mãe Asus ROG Strix Z790-A Gaming WiFi II', 2599.90, 'KaBumM!', 
+ 'https://images2.kabum.com.br/produtos/fotos/521062/placa-mae-asus-rog-strix-z790-a-gaming-wifi-ii-intel-z790-atx-ddr5-90mb1fn0-m0aay0_1723750263_gg.jpg', 
+ 'https://www.kabum.com.br/produto/521062/placa-mae-asus-rog-strix-z790-a-gaming-wifi-ii-intel-z790-atx-ddr5-preto-90mb1fn0-m0aay0', 
+ 'VRM robusto para Intel 14th Gen, PCIe 5.0 e WiFi 7.');--
 
 INSERT INTO products (category, name, price, store, image_url, link, description) VALUES 
-('Placa Mãe', 'Asus Z890 AYW Gaming WiFi', 1899.90, 'KaBuM!', 
- 'https://images.kabum.com.br/produtos/fotos/642999/placa-mae-asus-z890-ayw-gaming-wifi-w-intel-atx-ddr5-wi-fi-90mb1i60-m0eay0_1729272305_gg.jpg', 
+('Placa Mãe', 'Placa Mãe Asus Z890 AYW Gaming WiFi', 1899.90, 'KaBuM!', 
+ 'https://images9.kabum.com.br/produtos/fotos/642999/placa-mae-asus-z890-ayw-gaming-intel-atx-ddr5-wi-fi-90mb1i60-m0eay0_1730314367_gg.jpg', 
  'https://www.kabum.com.br/produto/642999/placa-mae-asus-z890-ayw-gaming-wifi-w-intel-atx-ddr5-wi-fi-90mb1i60-m0eay0', 
- 'Projetada para processadores Intel Core Ultra (Série 2) com recursos de IA avançados.');
+ 'Projetada para processadores Intel Core Ultra (Série 2) com recursos de IA avançados.');--
 
 -- === PLACAS DE VÍDEO (GPU) ===
 INSERT INTO products (category, name, price, store, image_url, link, description) VALUES 
-('Placa de Vídeo', 'XFX Radeon RX 9060 XT OC Gaming', 3499.90, 'KaBuM!', 
- 'https://images.kabum.com.br/produtos/fotos/870976/placa-de-video-xfx-rx-9060-xt-oc-gaming-amd-radeon-8gb-gddr6-128bits-20-gbps-fidelityfx-rdna-4-rx-96tsw8gbq_1729107937_gg.jpg', 
- 'https://www.kabum.com.br/produto/870976/placa-de-video-xfx-rx-9060-xt-oc-gaming-amd-radeon-8gb-gddr6-128bits-20-gbps-fidelityfx-rdna-4-rx-96tsw8gbq', 
- 'Próximo nível de desempenho em 1440p com arquitetura RDNA 4 e Ray Tracing avançado.');
+('Placa de Vídeo', 'Placa de Vídeo XFX Radeon RX 9060 XT OC Gaming', 3499.90, 'KaBuM!', 
+ 'https://images3.kabum.com.br/produtos/fotos/870973/placa-de-video-xfx-9600xt-16gb-3-fans-rx-96ts316b7_1748970415_gg.jpg', 
+ 'https://www.kabum.com.br/produto/870973/placa-de-video-xfx-rx-9060-xt-oc-amd-radeon-16gb-gddr6-128bits-20-gbps-triple-fan-rdna-4-rx-96ts316b7', 
+ 'Próximo nível de desempenho em 1440p com arquitetura RDNA 4 e Ray Tracing avançado.');--
 
 INSERT INTO products (category, name, price, store, image_url, link, description) VALUES 
-('Placa de Vídeo', 'Gigabyte Radeon RX 7600 Gaming OC', 1799.90, 'Pichau', 
- 'https://media.pichau.com.br/media/catalog/product/cache/2f958555330323e5f1dc3189736166e3/g/v/gv-r76gaming-oc-8gd.jpg', 
- 'https://www.pichau.com.br/placa-de-video-gigabyte-radeon-rx-7600-gaming-oc-8gb-gddr6-128-bit-gv-r76gaming-oc-8gd', 
- 'Desempenho avançado para jogos em 1080p com alta taxa de atualização.');
+('Placa de Vídeo', 'Placa de Vídeo Gigabyte Radeon RX 7600 Gaming OC', 1799.90, 'Pichau', 
+ 'https://media.pichau.com.br/media/catalog/product/cache/2f958555330323e505eba7ce930bdf27/g/v/gv-r76gaming-oc-8gd8.jpg', 
+ 'https://www.pichau.com.br/placa-de-video-gigabyte-radeon-rx-7600-gaming-oc-8gb-gddr6-128-bit-gv-r76gaming-oc-8gd?gad_source=1&gad_campaignid=17423967116&gbraid=0AAAAADvAK90W91qmoWoepqItKrjuR8ON6&gclid=Cj0KCQiA9OnJBhD-ARIsAPV51xPiXLKyXQcNEkGIYFfPFlYR7gUfvFDk_JLF1-K3QIxMSRbsyohTqSYaAp-qEALw_wcB', 
+ 'Desempenho avançado para jogos em 1080p com alta taxa de atualização.');--
 
 INSERT INTO products (category, name, price, store, image_url, link, description) VALUES 
-('Placa de Vídeo', 'Palit GeForce RTX 5060 Infinity 3', 2499.90, 'KaBuM!', 
- 'https://images.kabum.com.br/produtos/fotos/776931/placa-de-video-palit-geforce-rtx-5060-infinity-3-nvidia-geforce-8gb-gddr7-128bits-fp4-e-dlss-4-ray-tracing-ne75060019p1-gb2063s_1729103738_gg.jpg', 
- 'https://www.kabum.com.br/produto/776931/placa-de-video-palit-geforce-rtx-5060-infinity-3-nvidia-geforce-8gb-gddr7-128bits-fp4-e-dlss-4-ray-tracing-ne75060019p1-gb2063s', 
- 'Poder de GPU de alto desempenho em formato compacto para SFF.');
+('Placa de Vídeo', 'Placa de Vídeo Palit GeForce RTX 5060 Infinity 3', 2499.90, 'KaBuM!', 
+ 'https://images1.kabum.com.br/produtos/fotos/776931/placa-de-video-palit-geforce-rtx-5060-infinity-3-nvidia-geforce-8gb-gddr7-128bits-fp4-e-dlss-4-ray-tracing-ne75060019p1-gb2063s_1747394873_gg.jpg', 
+ 'https://www.kabum.com.br/produto/776931/placa-de-video-palit-geforce-rtx-5060-infinity-3-nvidia-geforce-8gb-gddr7-128bits-fp4-e-dlss-4-ray-tracing-ne75060019p1-gb2063s?gclsrc=aw.ds&&utm_id=22429436057&gad_source=1&gad_campaignid=22429436057&gbraid=0AAAAADx-HyGQSB65udjmTEmehuElsLNFM&gclid=Cj0KCQiA9OnJBhD-ARIsAPV51xPCVu1mp9CgfRRzL6YXta9eh7th5yWNxb8lMT9CUlLR7UgXWtkXPHsaAoWJEALw_wcB', 
+ 'Poder de GPU de alto desempenho em formato compacto para SFF.');--
 
 INSERT INTO products (category, name, price, store, image_url, link, description) VALUES 
-('Placa de Vídeo', 'MSI GeForce RTX 5070 12G Shadow', 4299.90, 'KaBuM!', 
- 'https://images.kabum.com.br/produtos/fotos/782142/placa-de-video-msi-rtx-5070-12g-shadow-2x-oc-nvdia-geforce-12gb-gddr7-opengl-4-6-g-sync-g5070-12s2c_1729107937_gg.jpg', 
- 'https://www.kabum.com.br/produto/782142/placa-de-video-msi-rtx-5070-12g-shadow-2x-oc-nvdia-geforce-12gb-gddr7-opengl-4-6-g-sync-g5070-12s2c', 
- '6144 Núcleos CUDA e clock extremo para jogos fluidos e visuais incomparáveis.');
+('Placa de Vídeo', 'Placa de Vídeo MSI GeForce RTX 5070 12G Shadow', 4299.90, 'KaBuM!', 
+ 'https://images2.kabum.com.br/produtos/fotos/782142/placa-de-video-msi-rtx-5070-12g-shadow-2x-oc-nvdia-geforce-g5070-12s2c_1749495336_gg.jpg', 
+ 'https://www.kabum.com.br/produto/782142/placa-de-video-msi-rtx-5070-12g-shadow-2x-oc-nvdia-geforce-12gb-gddr7-opengl-4-6-g-sync-g5070-12s2c?gclsrc=aw.ds&&utm_id=22429436057&gad_source=1&gad_campaignid=22429436057&gbraid=0AAAAADx-HyGQSB65udjmTEmehuElsLNFM&gclid=Cj0KCQiA9OnJBhD-ARIsAPV51xPgK4iQpsYW6eXCDKpuj0rvrd6jPX4Vybr3wQloZewX8k49IHG2TfEaAg0WEALw_wcB', 
+ '6144 Núcleos CUDA e clock extremo para jogos fluidos e visuais incomparáveis.');--
 
 INSERT INTO products (category, name, price, store, image_url, link, description) VALUES 
-('Placa de Vídeo', 'ASRock Radeon RX 9070 XT Challenger', 4599.90, 'Terabyte', 
- 'https://img.terabyteshop.com.br/produto/g/placa-de-video-asrock-amd-radeon-rx-9070-xt-challenger-16gb-gddr6-fsr-ray-tracing-90-ga61zz-00uanf_1729107937.jpg', 
- 'https://www.terabyteshop.com.br/produto/38584/placa-de-video-asrock-amd-radeon-rx-9070-xt-challenger-16gb-gddr6-fsr-ray-tracing-90-ga61zz-00uanf', 
- 'Aceleradores de Ray Tracing poderosos e design com três ventoinhas.');
+('Placa de Vídeo', 'Placa de Vídeo ASRock Radeon RX 9070 XT Challenger', 4599.90, 'Terabyte', 
+ 'https://img.terabyteshop.com.br/produto/g/placa-de-video-asrock-amd-radeon-rx-9070-xt-challenger-16gb-gddr6-fsr-ray-tracing-90-ga61zz-00uanf_251614.jpg', 
+ 'https://www.terabyteshop.com.br/produto/38584/placa-de-video-asrock-amd-radeon-rx-9070-xt-challenger-16gb-gddr6-fsr-ray-tracing-90-ga61zz-00uanf?gad_source=1&gad_campaignid=16138806718&gbraid=0AAAAADm8AXTjnBBTPMeabGpnH6RM6iWC8&gclid=Cj0KCQiA9OnJBhD-ARIsAPV51xP_qBGYMx6D5IPmiQe_wv_r1h4_wJTzPwXaYi5ObRmRYm824RY8aJMaAgH_EALw_wcB', 
+ 'Aceleradores de Ray Tracing poderosos e design com três ventoinhas.');--
 
 INSERT INTO products (category, name, price, store, image_url, link, description) VALUES 
-('Placa de Vídeo', 'Asus ROG Astral GeForce RTX 5090', 12999.90, 'KaBuM!', 
- 'https://images.kabum.com.br/produtos/fotos/700804/placa-de-video-asus-rtx5090-rog-astral-gaming-oc-nvidia-geforce-32gb-gddr7-argb-g-sync-ray-tracing-dlss-4-hdr-90yv0lw0-m0na00_1729107937_gg.jpg', 
+('Placa de Vídeo', 'Placa de Vídeo Asus ROG Astral GeForce RTX 5090', 12999.90, 'KaBuM!', 
+ 'https://images4.kabum.com.br/produtos/fotos/700804/placa-de-video-rog-astral-gaming-geforce-rtx5090-oc-nvidia-32gb-gddr7-argb-90yv0lw0-m0na00_1737724637_gg.jpg', 
  'https://www.kabum.com.br/produto/700804/placa-de-video-asus-rtx5090-rog-astral-gaming-oc-nvidia-geforce-32gb-gddr7-argb-g-sync-ray-tracing-dlss-4-hdr-90yv0lw0-m0na00', 
- 'Primeira placa quad-fan da ROG com câmara de vapor exclusiva e desempenho inigualável.');
+ 'Primeira placa quad-fan da ROG com câmara de vapor exclusiva e desempenho inigualável.');--
 
 -- === MEMÓRIA RAM ===
 INSERT INTO products (category, name, price, store, image_url, link, description) VALUES 
