@@ -6,4 +6,5 @@ export interface Product {
     imageUrl: string;
     description: string;
     category: string;
+    link: string;
 }
