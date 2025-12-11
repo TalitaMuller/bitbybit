@@ -2,7 +2,7 @@
 
 ## 📖 Sobre o Projeto
 
-O **BitByBit** é uma plataforma multiplataforma (Web, Desktop e Mobile) criada como Projeto Integrador para o curso Técnico em Desenvolvimento de Sistemas. A aplicação busca resolver um problema comum para entusiastas de tecnologia: a dificuldade de encontrar os melhores preços e informações confiáveis ao montar ou atualizar um computador.
+O **BitByBit** é uma plataforma Web criada como Projeto Integrador para o curso Técnico em Desenvolvimento de Sistemas. A aplicação busca resolver um problema comum para entusiastas de tecnologia: a dificuldade de encontrar os melhores preços e informações confiáveis ao montar ou atualizar um computador.
 
 Nossa solução centraliza os preços das principais lojas de e-commerce do Brasil e oferece ferramentas interativas, como um montador de PC e um comparador de produtos. O grande diferencial é o **Byb**, nosso assistente de IA (potencializado pelo Google Gemini), treinado para ser um especialista em hardware e dar recomendações personalizadas aos usuários.
 
@@ -14,17 +14,18 @@ Nossa solução centraliza os preços das principais lojas de e-commerce do Bras
 - **🤖 Assistente IA (Byb):** Converse com nosso chatbot especialista para tirar dúvidas, pedir recomendações e obter ajuda personalizada.
 - **🖥️ Multiplataforma:** Acessível via web, com versões para desktop (Electron) e mobile.
 
+
 ## 🚀 Tecnologias Utilizadas
 
 O projeto é um monorepo dividido em duas partes principais:
 
-| Frontend                                                                                             | Backend                                                                                                |
-| ---------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------ |
-| [**React**](https://react.dev/) com [**TypeScript**](https://www.typescriptlang.org/)                | [**Node.js**](https://nodejs.org/)                                                                     |
-| [**Vite**](https://vitejs.dev/) como ferramenta de build                                             | [**Express.js**](https://expressjs.com/) para a criação da API RESTful                                 |
-| [**Tailwind CSS**](https://tailwindcss.com/) para estilização                                        | [**Google Gemini API**](https://ai.google.dev/) para o chatbot                                         |
-| [**React Router**](https://reactrouter.com/) para navegação                                          | **MySQL** (planejado) para persistência de dados                                                       |
-| [**Electron**](https://www.electronjs.org/) (planejado) para a versão desktop                        |                                                                                                        |
+| Frontend | Backend |
+| :--- | :--- |
+| [**React**](https://react.dev/) com [**TypeScript**](https://www.typescriptlang.org/) | [**Node.js**](https://nodejs.org/) com [**Express.js**](https://expressjs.com/) |
+| [**Vite**](https://vitejs.dev/) (Ferramenta de Build) | [**MySQL**](https://www.mysql.com/) (Banco de Dados Relacional) |
+| [**Tailwind CSS**](https://tailwindcss.com/) (Estilização) | [**Google Gemini API**](https://ai.google.dev/) (Inteligência Artificial) |
+| [**React Router**](https://reactrouter.com/) (Navegação SPA) | [**JWT**](https://jwt.io/) & [**Bcrypt**](https://www.npmjs.com/package/bcrypt) (Autenticação e Segurança) |
+
 
 ## ⚙️ Como Executar o Projeto
 
@@ -38,7 +39,7 @@ Siga os passos abaixo para rodar o projeto em seu ambiente local.
 
 1.  **Clone o repositório:**
     ```bash
-    git clone https://github.com/TalitaMuller/bitbybit.git
+    git clone https://github.com/TalitaMuller/bitbybit
     cd bitbybit
     ```
 

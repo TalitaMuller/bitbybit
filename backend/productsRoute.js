@@ -1,9 +1,7 @@
-// backend/productsRoute.js
 const express = require('express');
 const router = express.Router();
 const pool = require('./db.js');
 
-// Rota para pegar todos os produtos
 router.get('/', async (req, res) => {
     try {
         const [products] = await pool.query(
@@ -19,7 +17,6 @@ router.get('/', async (req, res) => {
              FROM products`
         );
         
-        // Garante que o preço é número
         const formattedProducts = products.map(p => ({
             ...p,
             price: Number(p.price)

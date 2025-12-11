@@ -81,10 +81,6 @@ CREATE TABLE chat_history (
 );
 
 
-
-USE bitbybit;
-
--- 1. Recriar a tabela para garantir a estrutura correta (com link)
 DROP TABLE IF EXISTS products;
 
 CREATE TABLE products (
@@ -98,7 +94,6 @@ CREATE TABLE products (
     category VARCHAR(50) NOT NULL
 );
 
--- 2. Inserir os produtos da sua lista
 INSERT INTO products (category, name, price, store, image_url, link, description) VALUES 
 
 -- === PROCESSADORES (CPU) ===
@@ -212,7 +207,7 @@ INSERT INTO products (category, name, price, store, image_url, link, description
  'Sólida durabilidade e estética irresistível para entusiastas.');--
 
 INSERT INTO products (category, name, price, store, image_url, link, description) VALUES 
-('Placa Mãe', 'Placa Mãe Asus ROG Strix Z790-A Gaming WiFi II', 2599.90, 'KaBumM!', 
+('Placa Mãe', 'Placa Mãe Asus ROG Strix Z790-A Gaming WiFi II', 2599.90, 'KaBuM!', 
  'https://images2.kabum.com.br/produtos/fotos/521062/placa-mae-asus-rog-strix-z790-a-gaming-wifi-ii-intel-z790-atx-ddr5-90mb1fn0-m0aay0_1723750263_gg.jpg', 
  'https://www.kabum.com.br/produto/521062/placa-mae-asus-rog-strix-z790-a-gaming-wifi-ii-intel-z790-atx-ddr5-preto-90mb1fn0-m0aay0', 
  'VRM robusto para Intel 14th Gen, PCIe 5.0 e WiFi 7.');--
@@ -262,155 +257,155 @@ INSERT INTO products (category, name, price, store, image_url, link, description
 
 -- === MEMÓRIA RAM ===
 INSERT INTO products (category, name, price, store, image_url, link, description) VALUES 
-('Memória RAM', 'XPG Spectrix D35G 16GB 3200MHz', 279.90, 'KaBuM!', 
- 'https://images.kabum.com.br/produtos/fotos/512397/memoria-gamer-xpg-spectrix-d35g-16gb-rgb-ddr4-3200-mhz-branco-ax4u320016g16a-swhd35g_1703698777_gg.jpg', 
- 'https://www.kabum.com.br/produto/512397/memoria-gamer-xpg-spectrix-d35g-16gb-rgb-ddr4-3200-mhz-branco-ax4u320016g16a-swhd35g', 
- 'Memória RGB com estilo e desempenho para setups brancos.');
+('Memória RAM', 'Memória RAM XPG Spectrix D35G 16GB 3200MHz', 279.90, 'KaBuM!', 
+ 'https://images6.kabum.com.br/produtos/fotos/474946/memoria-xpg-spectrix-d35g-rgb-16gb-3200mhz-ddr4-cl16-preto-ax4u320016g16a-sbkd35g_1700162057_gg.jpg', 
+ 'https://www.kabum.com.br/produto/474946/memoria-ram-xpg-spectrix-d35g-rgb-16gb-3200mhz-ddr4-cl16-preto-ax4u320016g16a-sbkd35g?gclsrc=aw.ds&&utm_id=22429436051&gad_source=1&gad_campaignid=22429436051&gbraid=0AAAAADx-HyHnZulk10UWqREo_wNapF6pv&gclid=Cj0KCQiA9OnJBhD-ARIsAPV51xMkgHpWBb20qzOt4q2ZDFFlHLfPANVQJcVEFneumFu42JAgJPzjY6UaApJSEALw_wcB', 
+ 'Memória RGB com estilo e desempenho para setups brancos.');--
 
 INSERT INTO products (category, name, price, store, image_url, link, description) VALUES 
-('Memória RAM', 'Kingston Fury Beast 16GB DDR5', 389.90, 'KaBuM!', 
- 'https://images.kabum.com.br/produtos/fotos/349654/memoria-kingston-fury-beast-16gb-5600mhz-ddr5-cl40-preto-kf556c40bb-16_1660677402_gg.jpg', 
- 'https://www.kabum.com.br/produto/349654/memoria-kingston-fury-beast-16gb-5600mhz-ddr5-cl40-preto-kf556c40bb-16', 
- 'Velocidade DDR5 para extrair o máximo do seu sistema.');
+('Memória RAM', 'Memória RAM Kingston Fury Beast 16GB DDR5', 389.90, 'KaBuM!', 
+ 'https://images7.kabum.com.br/produtos/fotos/285967/memoria-kingston-fury-beast-16gb-5600mhz-ddr5-cl40-preto-kf556c40bb-16_1639574788_gg.jpg', 
+ 'https://www.kabum.com.br/produto/285967/memoria-ram-kingston-fury-beast-16gb-5600mhz-ddr5-cl40-para-intel-xmp-preto-kf556c40bb-16', 
+ 'Velocidade DDR5 para extrair o máximo do seu sistema.');--
 
 INSERT INTO products (category, name, price, store, image_url, link, description) VALUES 
-('Memória RAM', 'Corsair Vengeance RGB 16GB DDR5', 459.90, 'Pichau', 
- 'https://media.pichau.com.br/media/catalog/product/cache/2f958555330323e5f1dc3189736166e3/c/m/cmh16gx5m1b5200z40.jpg', 
- 'https://www.pichau.com.br/memoria-corsair-vengeance-rgb-16gb-1x16gb-ddr5-5200mhz-c40-cinza-cmh16gx5m1b5200z40', 
- 'Iluminação RGB dinâmica e alto desempenho Corsair.');
+('Memória RAM', 'Memória RAM Corsair Vengeance RGB 16GB DDR5', 459.90, 'Pichau', 
+ 'https://media.pichau.com.br/media/catalog/product/cache/2f958555330323e505eba7ce930bdf27/c/m/cmh16gx5m1b5200c40155.jpg', 
+ 'https://www.pichau.com.br/memoria-corsair-vengeance-rgb-16gb-1x16gb-ddr5-5200mhz-c40-preto-cmh16gx5m1b5200c40?srsltid=AfmBOoo97m88SIot21mmYuoOrZU9v_8KpTGYyFfgIxHflpiIIgi0EVfirxg', 
+ 'Iluminação RGB dinâmica e alto desempenho Corsair.');--
 
 INSERT INTO products (category, name, price, store, image_url, link, description) VALUES 
-('Memória RAM', 'Kingston Fury Beast RGB 32GB DDR5', 899.90, 'Terabyte', 
- 'https://img.terabyteshop.com.br/produto/g/memoria-ddr5-kingston-fury-beast-rgb-32gb-5200mhz-black-kf552c40bba-32_155577.jpg', 
- 'https://www.terabyteshop.com.br/produto/23983/memoria-ddr5-kingston-fury-beast-rgb-32gb-5200mhz-black-kf552c40bba-32', 
- 'Módulo de 32GB para quem precisa de muita memória e estilo.');
+('Memória RAM', 'Memória RAM Kingston Fury Beast RGB 32GB DDR5', 899.90, 'Terabyte', 
+ 'https://img.terabyteshop.com.br/produto/g/memoria-ddr4-kingston-fury-beast-rgb-16gb-3200mhz-black-kf432c16bb2a16_178481.jpg', 
+ 'https://www.terabyteshop.com.br/produto/26030/memoria-ddr4-kingston-fury-beast-rgb-16gb-3200mhz-black-kf432c16bb2a16?gad_source=1&gad_campaignid=16148027731&gbraid=0AAAAADm8AXQnW9t0aYUqSM0IDrhulGcOY&gclid=Cj0KCQiA9OnJBhD-ARIsAPV51xOYWBF8o3Yr0EKYhaKkS7LJV4y2iHaRfqRDmbw3i_INwodQ8phiXnUaAoqwEALw_wcB', 
+ 'Módulo de 32GB para quem precisa de muita memória e estilo.');--
 
 INSERT INTO products (category, name, price, store, image_url, link, description) VALUES 
-('Memória RAM', 'XPG Gammix D35 8GB DDR4', 139.90, 'Terabyte', 
- 'https://img.terabyteshop.com.br/produto/g/memoria-ddr4-xpg-gammix-d35-8gb-3200mhz-black-ax4u32008g16a-sbkd35_167909.jpg', 
- 'https://www.terabyteshop.com.br/produto/25636/memoria-ddr4-xpg-gammix-d35-8gb-3200mhz-black-ax4u32008g16a-sbkd35', 
- 'Opção econômica e eficiente para builds DDR4.');
+('Memória RAM', 'Memória RAM XPG Gammix D35 8GB DDR4', 139.90, 'Terabyte', 
+ 'https://img.terabyteshop.com.br/produto/g/memoria-ddr4-xpg-gammix-d35-8gb-3200mhz-black-ax4u32008g16a-sbkd35_175566.jpg', 
+ 'https://www.terabyteshop.com.br/produto/25636/memoria-ddr4-xpg-gammix-d35-8gb-3200mhz-black-ax4u32008g16a-sbkd35?gad_source=1&gad_campaignid=16148027731&gbraid=0AAAAADm8AXQnW9t0aYUqSM0IDrhulGcOY&gclid=Cj0KCQiA9OnJBhD-ARIsAPV51xOGGV9u7WjAb65LT0CMNyudEZjfcWlospG3k6641MX9xKDGnv5cJAQaAtKkEALw_wcB', 
+ 'Opção econômica e eficiente para builds DDR4.');--
 
 -- === ARMAZENAMENTO ===
 INSERT INTO products (category, name, price, store, image_url, link, description) VALUES 
-('Armazenamento', 'SSD Sandisk Plus 480GB', 229.90, 'Pichau', 
- 'https://media.pichau.com.br/media/catalog/product/cache/2f958555330323e5f1dc3189736166e3/s/d/sdssda-480g-g26.jpg', 
+('Armazenamento', 'Armazenamento SSD Sandisk Plus 480GB', 229.90, 'Pichau', 
+ 'https://media.pichau.com.br/media/catalog/product/cache/2f958555330323e505eba7ce930bdf27/s/d/sdssda-480g-g263212.jpg', 
  'https://www.pichau.com.br/ssd-plus-sandisk-480gb-2-5-sata-iii-6gb-s-leitura-535mb-s-gravacao-445mb-s-sdssda-480g-g26', 
- 'SSD SATA confiável para reviver PCs antigos ou armazenamento extra.');
+ 'SSD SATA confiável para reviver PCs antigos ou armazenamento extra.');--
 
 INSERT INTO products (category, name, price, store, image_url, link, description) VALUES 
-('Armazenamento', 'SSD Adata Legend 710 512GB', 269.90, 'Pichau', 
- 'https://media.pichau.com.br/media/catalog/product/cache/2f958555330323e5f1dc3189736166e3/a/l/aleg-710-512gcs.jpg', 
- 'https://www.pichau.com.br/ssd-adata-legend-710-512gb-m-2-2280-pcie-nvme-leitura-2400-mb-s-gravacao-1800-mb-s-aleg-710-512gcs', 
- 'Velocidade NVMe acessível para carregamento rápido.');
+('Armazenamento', 'Armazenamento SSD Adata Legend 710 512GB', 269.90, 'KaBuM!', 
+ 'https://images5.kabum.com.br/produtos/fotos/415885/ssd-adata-legend-710-512gb-m-2-2280-pcie-gen3x4-nvme-1-4-leitura-2-400-mb-s-e-gravacao-1-800-mb-s-azul-aleg-710-512gcs_1675085973_gg.jpg', 
+ 'https://www.kabum.com.br/produto/415885/ssd-adata-legend-710-512gb-m-2-2280-pcie-gen3x4-nvme-1-4-leitura-2-400-mb-s-e-gravacao-1-800-mb-s-azul-aleg-710-512gcs', 
+ 'Velocidade NVMe acessível para carregamento rápido.');--
 
 INSERT INTO products (category, name, price, store, image_url, link, description) VALUES 
-('Armazenamento', 'SSD Lexar NQ100 256GB', 149.90, 'Pichau', 
- 'https://media.pichau.com.br/media/catalog/product/cache/2f958555330323e5f1dc3189736166e3/l/n/lnq100x256g-rnnng.jpg', 
- 'https://www.pichau.com.br/ssd-lexar-nq100-256gb-2-5-sata-iii-6gb-s-leitura-550mb-s-gravacao-500mb-s-lnq100x256g-rnnng', 
- 'Solução básica e barata para substituir HDs.');
+('Armazenamento', 'Armazenamento SSD Lexar NQ100 256GB', 149.90, 'Pichau', 
+ 'https://media.pichau.com.br/media/catalog/product/cache/2f958555330323e505eba7ce930bdf27/l/n/lnq100x256g-rnnng12.jpg', 
+ 'https://www.pichau.com.br/ssd-lexar-nq100-256gb-2-5-sata-iii-6gb-s-leitura-550mb-s-gravacao-500mb-s-lnq100x256g-rnnng?gad_source=1&gad_campaignid=17423678867&gbraid=0AAAAADvAK90pT_azM40dPKZmzAkM7GMz8&gclid=Cj0KCQiA9OnJBhD-ARIsAPV51xMGWNcejPz_Ba4nuY8QB9qpfaNVyojgiwC0iJ2dOSnaMx1IMk51m0caAphMEALw_wcB', 
+ 'Solução básica e barata para substituir HDs.');--
 
 INSERT INTO products (category, name, price, store, image_url, link, description) VALUES 
-('Armazenamento', 'SSD Kingston NV3 1TB', 439.90, 'Terabyte', 
- 'https://img.terabyteshop.com.br/produto/g/ssd-kingston-nv3-1tb-m2-nvme-2280-pcie-40-leitura-6000mbs-e-gravacao-4000mbs-snv3s1000g_202888.jpg', 
- 'https://www.terabyteshop.com.br/produto/31564/ssd-kingston-nv3-1tb-m2-nvme-2280-pcie-40-leitura-6000mbs-e-gravacao-4000mbs-snv3s1000g', 
- 'Alta velocidade PCIe 4.0 com 6000MB/s de leitura.');
+('Armazenamento', 'Armazenamento SSD Kingston NV3 1TB', 439.90, 'Terabyte', 
+ 'https://img.terabyteshop.com.br/produto/g/ssd-kingston-nv3-1tb-m2-nvme-2280-pcie-40-leitura-6000mbs-e-gravacao-4000mbs-snv3s1000g_211589.jpg', 
+ 'https://www.terabyteshop.com.br/produto/31564/ssd-kingston-nv3-1tb-m2-nvme-2280-pcie-40-leitura-6000mbs-e-gravacao-4000mbs-snv3s1000g?srsltid=AfmBOor7qVm-cu6VnEgnSyxXy5WLdAGeLCTnYZ5I_fzcHpwxOhwcLreE', 
+ 'Alta velocidade PCIe 4.0 com 6000MB/s de leitura.');--
 
 INSERT INTO products (category, name, price, store, image_url, link, description) VALUES 
-('Armazenamento', 'HD WD Purple 4TB', 699.90, 'KaBuM!', 
- 'https://images.kabum.com.br/produtos/fotos/948487/hd-wd-sata-3-5-purple-surveillance-4tb-intellipower-64mb-cache-sata-6-0gb-s-wd40purz-hd-para-seguranca-vigilancia-dvr_1523974958_gg.jpg', 
- 'https://www.kabum.com.br/produto/948487/hd-wd-sata-3-5-purple-surveillance-4tb-intellipower-64mb-cache-sata-6-0gb-s-wd40purz-hd-para-seguranca-vigilancia-dvr', 
- 'Ideal para armazenamento em massa e sistemas de vigilância.');
+('Armazenamento', 'Armazenamento HD WD Purple 4TB', 699.90, 'KaBuM!', 
+ 'https://images8.kabum.com.br/produtos/fotos/sync_mirakl/580058/xlarge/Hd-WD-Purple-4TB-Sata3-Para-Vigilancia-Wd43purz_1757361598.jpg', 
+ 'https://www.kabum.com.br/produto/580058/hd-wd-purple-4tb-sata3-para-vigilancia-wd43purz?gclsrc=aw.ds&&utm_id=21434223532&gad_source=1&gad_campaignid=21423802761&gbraid=0AAAAADx-HyFCdngptzy0D2f9Yo3gyAixn&gclid=Cj0KCQiA9OnJBhD-ARIsAPV51xNaUtLk35H-W2Vu8qPgd9qL9EzSndph4aMD0ahCPuID6_mSTP_Dka4aAkblEALw_wcB', 
+ 'Ideal para armazenamento em massa e sistemas de vigilância.');--
 
 -- === FONTES ===
 INSERT INTO products (category, name, price, store, image_url, link, description) VALUES 
-('Fonte', 'Husky Sledger 950W Platinum', 899.90, 'KaBuM!', 
- 'https://images.kabum.com.br/produtos/fotos/597158/fonte-husky-sledger-950w-80-plus-platinum-cybenetics-platinum-pfc-ativo-bivolt-hfn950pt_1715006987_gg.jpg', 
- 'https://www.kabum.com.br/produto/597158/fonte-husky-sledger-950w-80-plus-platinum-cybenetics-platinum-pfc-ativo-bivolt-hfn950pt', 
- 'Eficiência Platinum e 950W de potência para setups extremos.');
+('Fonte', 'Fonte Husky Sledger 950W Platinum', 899.90, 'KaBuM!', 
+ 'https://images6.kabum.com.br/produtos/fotos/514896/fonte-xpg-core-reactor-ii-ve-850w-75261436_1721238623_gg.jpg', 
+ 'https://www.kabum.com.br/produto/514896/fonte-xpg-core-reactor-ii-ve-850w-80-plus-gold-modular-pfc-ativo-preto-75261436?gclsrc=aw.ds&&utm_id=22429436054&gad_source=1&gad_campaignid=22429436054&gbraid=0AAAAADx-HyFmDw8zmZBg62xlUKcrgqoMZ&gclid=Cj0KCQiA9OnJBhD-ARIsAPV51xOxR8dI7C_pXY8EGz5Gnrz6S7fRSH-G3-JHa_hBvfaNNc3Of72Pt-4aAiVtEALw_wcB', 
+ 'Eficiência Platinum e 950W de potência para setups extremos.');--
 
 INSERT INTO products (category, name, price, store, image_url, link, description) VALUES 
-('Fonte', 'MSI MAG A600DN 600W', 289.90, 'KaBuM!', 
- 'https://images.kabum.com.br/produtos/fotos/501552/fonte-msi-mag-a600dn-600w-80-plus-306-7zp6b39-809_1699974258_gg.jpg', 
- 'https://www.kabum.com.br/produto/501552/fonte-msi-mag-a600dn-600w-80-plus-306-7zp6b39-809', 
- 'Fonte de entrada confiável da MSI.');
+('Fonte', 'Fonte MSI MAG A600DN 600W', 289.90, 'KaBuM!', 
+ 'https://images5.kabum.com.br/produtos/fotos/369655/fonte-msi-mag-a600dn-atx-600w-80-plus-pfc-ativo-entrada-bivolt-preto-306-7zp6b22-809_1667475815_gg.jpg', 
+ 'https://www.kabum.com.br/produto/369655/fonte-msi-mag-a600dn-600w-80-plus-white-pfc-ativo-com-cabo-preto-306-7zp6b22-809?gclsrc=aw.ds&&utm_id=22429436054&gad_source=1&gad_campaignid=22429436054&gbraid=0AAAAADx-HyFmDw8zmZBg62xlUKcrgqoMZ&gclid=Cj0KCQiA9OnJBhD-ARIsAPV51xMlge6xh0xYpKU95RuqargVeI2qj36ZzCnqDaiw6TbNpfqw7-kEidcaAgc0EALw_wcB', 
+ 'Fonte de entrada confiável da MSI.');--
 
 INSERT INTO products (category, name, price, store, image_url, link, description) VALUES 
-('Fonte', 'Gamemax GX700 700W Gold', 449.90, 'KaBuM!', 
- 'https://images.kabum.com.br/produtos/fotos/506265/fonte-atx-gamemax-gx700-700w-80-plus-gold-pfc-ativo-black-gx700wbkpss7710br_1701198428_gg.jpg', 
- 'https://www.kabum.com.br/produto/506265/fonte-atx-gamemax-gx700-700w-80-plus-gold-pfc-ativo-black-gx700wbkpss7710br', 
- 'Certificação Gold e bom custo-benefício.');
+('Fonte', 'Fonte Gamemax GX700 700W Gold', 449.90, 'KaBuM!', 
+ 'https://images5.kabum.com.br/produtos/fotos/sync_mirakl/506265/xlarge/Fonte-ATX-Gamemax-Gx700-700W-80-Plus-Gold-Pfc-Ativo-Black-Gx700wbkpss7710br_1756982389.jpg', 
+ 'https://www.kabum.com.br/produto/506265/fonte-atx-gamemax-gx700-700w-80-plus-gold-pfc-ativo-black-gx700wbkpss7710br?gclsrc=aw.ds&&utm_id=21722767675&gad_source=1&gad_campaignid=21722772874&gbraid=0AAAAADx-HyEPgQgTS4O1jcW97MVR0pWQJ&gclid=Cj0KCQiA9OnJBhD-ARIsAPV51xOzldv9wd9FqsZA9o2QGkWjB4fHxzUehU9DaWaZNuasjcz2NVhw-P8aApMaEALw_wcB', 
+ 'Certificação Gold e bom custo-benefício.');--
 
 INSERT INTO products (category, name, price, store, image_url, link, description) VALUES 
-('Fonte', 'MSI MAG A850GL 850W Gold', 749.90, 'KaBuM!', 
- 'https://images.kabum.com.br/produtos/fotos/462816/fonte-msi-mag-a850gl-850w-80-plus-gold-modular-pfc-ativo-com-cabo-preto_1686665798_gg.jpg', 
- 'https://www.kabum.com.br/produto/462816/fonte-msi-mag-a850gl-850w-80-plus-gold-modular-pfc-ativo-com-cabo-preto', 
- 'Modular e preparada para as novas GPUs com conector PCIe 5.0.');
+('Fonte', 'Fonte MSI MAG A850GL 850W Gold', 749.90, 'KaBuM!', 
+ 'https://images6.kabum.com.br/produtos/fotos/462816/fonte-msi-mag-a850gl-atx-850w-80-plus-gold-modular-pfc-ativo-bivolt-preto_1698349376_gg.jpg', 
+ 'https://www.kabum.com.br/produto/462816/fonte-msi-mag-a850gl-850w-80-plus-gold-modular-pfc-ativo-com-cabo-preto?gclsrc=aw.ds&&utm_id=22429436054&gad_source=1&gad_campaignid=22429436054&gbraid=0AAAAADx-HyFmDw8zmZBg62xlUKcrgqoMZ&gclid=Cj0KCQiA9OnJBhD-ARIsAPV51xNTgufKn-f3RoLIplP0fQfBDWKS3Km_RrAfmJyHTRgXdwWEqmE9s4YaArKEEALw_wcB', 
+ 'Modular e preparada para as novas GPUs com conector PCIe 5.0.');--
 
 INSERT INTO products (category, name, price, store, image_url, link, description) VALUES 
-('Fonte', 'ASRock Steel Legend 850W White', 899.90, 'Terabyte', 
- 'https://img.terabyteshop.com.br/produto/g/fonte-asrock-steel-legend-white-850w-80-plus-gold-cybenetics-platinum-full-modular-atx-31-pcie-51-branco-sl-850gw_199342.jpg', 
- 'https://www.terabyteshop.com.br/produto/33214/fonte-asrock-steel-legend-white-850w-80-plus-gold-cybenetics-platinum-full-modular-atx-31-pcie-51-branco-sl-850gw', 
- 'Design branco impecável e certificação Platinum.');
+('Fonte', 'Fonte ASRock Steel Legend 850W White', 899.90, 'Terabyte', 
+ 'https://img.terabyteshop.com.br/produto/g/fonte-asrock-steel-legend-white-850w-80-plus-gold-cybenetics-platinum-full-modular-atx-31-pcie-51-branco-sl-850gw_221229.jpg', 
+ 'https://www.terabyteshop.com.br/produto/33214/fonte-asrock-steel-legend-white-850w-80-plus-gold-cybenetics-platinum-full-modular-atx-31-pcie-51-branco-sl-850gw?gad_source=1&gad_campaignid=16145315219&gbraid=0AAAAADm8AXTfm8yro5ryDgMB1blndu6Mv&gclid=Cj0KCQiA9OnJBhD-ARIsAPV51xNmL-lh6eBV3Ekg1HNpN0EPR4XqHQjzhoHFONyzxPmsCO-5j1DKOlAaAlA9EALw_wcB', 
+ 'Design branco impecável e certificação Platinum.');--
 
 INSERT INTO products (category, name, price, store, image_url, link, description) VALUES 
-('Fonte', 'Corsair RM1000e 1000W Gold', 1199.90, 'Pichau', 
- 'https://media.pichau.com.br/media/catalog/product/cache/2f958555330323e5f1dc3189736166e3/c/p/cp-9020294-br.jpg', 
+('Fonte', 'Fonte Corsair RM1000e 1000W Gold', 1199.90, 'Pichau', 
+ 'https://media.pichau.com.br/media/catalog/product/cache/2f958555330323e505eba7ce930bdf27/c/p/cp-9020297-br4.jpg', 
  'https://www.pichau.com.br/fonte-corsair-rm1000e-1000w-full-modular-atx-3-1-pcie-5-1-cybenetics-gold-branco-cp-9020294-br', 
- 'Potência de 1000W totalmente modular e silenciosa.');
+ 'Potência de 1000W totalmente modular e silenciosa.');--
 
 -- === GABINETES ===
 INSERT INTO products (category, name, price, store, image_url, link, description) VALUES 
-('Gabinete', 'Mymax Kyrios Micro ATX', 189.90, 'KaBuM!', 
- 'https://images.kabum.com.br/produtos/fotos/741993/gabinete-gamer-kyrios-micro-atx-3-fans-rbg-branco-mymax_1729107937_gg.jpg', 
- 'https://www.kabum.com.br/produto/741993/gabinete-gamer-kyrios-micro-atx-3-fans-rbg-branco-mymax', 
- 'Compacto e já vem com 3 fans RGB.');
+('Gabinete', 'Gabinete Mymax Kyrios Micro ATX', 189.90, 'KaBuM!', 
+ 'https://images4.kabum.com.br/produtos/fotos/579124/gabinete-gamer-hyrax-hgb730-mini-tower-m-atx-frente-e-lateral-em-vidro-temperado-branco-hgb730w_1720109882_gg.jpg', 
+ 'https://www.kabum.com.br/produto/579124/gabinete-gamer-hyrax-hgb730-mini-tower-m-atx-frontal-e-lateral-em-vidro-temperado-sem-fans-branco-hgb730w?gclsrc=aw.ds&&utm_id=22446425993&gad_source=1&gad_campaignid=22446425993&gbraid=0AAAAADx-HyFZZK0RuOoex30gFL6xZbEeN&gclid=Cj0KCQiA9OnJBhD-ARIsAPV51xOf-YrXj6857gTVFvyoK61oPjeDMZkUaufS5dj2HCxER_mUiOLZ4f8aApROEALw_wcB', 
+ 'Compacto e já vem com 3 fans RGB.');--
 
 INSERT INTO products (category, name, price, store, image_url, link, description) VALUES 
-('Gabinete', 'Rise Mode Galaxy Glass', 399.90, 'KaBuM!', 
- 'https://images.kabum.com.br/produtos/fotos/320908/gabinete-gamer-rise-mode-galaxy-glass-mid-tower-atx-lateral-e-frontal-em-vidro-temperado-sem-fans-preto-rm-ga-gg-fb_1653683038_gg.jpg', 
- 'https://www.kabum.com.br/produto/320908/gabinete-gamer-rise-mode-galaxy-glass-mid-tower-atx-lateral-e-frontal-em-vidro-temperado-sem-fans-preto-rm-ga-gg-fb', 
- 'Aquário de vidro temperado para exibir seu hardware.');
+('Gabinete', 'Gabinete Rise Mode Galaxy Glass', 399.90, 'KaBuM!', 
+ 'https://images9.kabum.com.br/produtos/fotos/320909/gabinete-gamer-rise-mode-galaxy-glass-lateral-em-vidro-temperado-branco-rm-ga-gg-fw_1657736758_gg.jpg', 
+ 'https://www.kabum.com.br/produto/320909/gabinete-gamer-rise-mode-galaxy-glass-mid-tower-atx-lateral-e-frontal-em-vidro-temperado-sem-fans-branco-rm-ga-gg-fw?gclsrc=aw.ds&&utm_id=22446425993&gad_source=1&gad_campaignid=22446425993&gbraid=0AAAAADx-HyFZZK0RuOoex30gFL6xZbEeN&gclid=Cj0KCQiA9OnJBhD-ARIsAPV51xPKfI5M6F-Gv7jHmDv16_aRN5qVYtwdXudXu8CmtgL_ifamoV1vYkkaAsSGEALw_wcB', 
+ 'Aquário de vidro temperado para exibir seu hardware.');--
 
 INSERT INTO products (category, name, price, store, image_url, link, description) VALUES 
-('Gabinete', 'SuperFrame Vhagar', 459.90, 'Terabyte', 
- 'https://img.terabyteshop.com.br/produto/g/gabinete-gamer-superframe-vhagar-mid-tower-vidro-temperado-atx-branco-sem-fan-sf-cs-vgmawsf_199342.jpg', 
- 'https://www.terabyteshop.com.br/produto/31123/gabinete-gamer-superframe-vhagar-mid-tower-vidro-temperado-atx-branco-sem-fan-sf-cs-vgmawsf', 
- 'Design moderno e espaçoso para facilitar a montagem.');
+('Gabinete', 'Gabinete SuperFrame Vhagar', 459.90, 'Terabyte', 
+ 'https://img.terabyteshop.com.br/produto/g/gabinete-gamer-superframe-vhagar-mid-tower-vidro-temperado-atx-branco-sem-fan-sf-cs-vgmawsf_253207.jpg', 
+ 'https://www.terabyteshop.com.br/produto/31123/gabinete-gamer-superframe-vhagar-mid-tower-vidro-temperado-atx-branco-sem-fan-sf-cs-vgmawsf?gad_source=1&gad_campaignid=20821077101&gbraid=0AAAAADm8AXSMGTg9p-csvVFSXp9QMN3cJ&gclid=Cj0KCQiA9OnJBhD-ARIsAPV51xPxbFWkNWLonuishaK4WRpsuOhCqJxDHsDrKNroOwzErVYEqx_kC54aAsxPEALw_wcB', 
+ 'Design moderno e espaçoso para facilitar a montagem.');--
 
 INSERT INTO products (category, name, price, store, image_url, link, description) VALUES 
-('Gabinete', 'NZXT H9 Flow', 1399.90, 'KaBuM!', 
- 'https://images.kabum.com.br/produtos/fotos/439319/gabinete-nzxt-h9-flow-dual-chamber-mid-tower-vidro-360-preto_1684873322_gg.jpg', 
- 'https://www.kabum.com.br/produto/439319/gabinete-nzxt-h9-flow-dual-chamber-mid-tower-vidro-360-preto', 
- 'Câmara dupla para fluxo de ar superior e estética limpa.');
+('Gabinete', 'Gabinete NZXT H9 Flow', 1399.90, 'Terabyte', 
+ 'https://img.terabyteshop.com.br/produto/g/gabinete-gamer-nzxt-h9-flow-mid-tower-vidro-temperado-atx-sem-fonte-com-4-fans-branco-cm-h92fw-01_255983.jpg', 
+ 'https://www.terabyteshop.com.br/produto/39476/gabinete-gamer-nzxt-h9-flow-mid-tower-vidro-temperado-atx-sem-fonte-com-4-fans-branco-cm-h92fw-01?gad_source=1&gad_campaignid=20821077101&gbraid=0AAAAADm8AXSMGTg9p-csvVFSXp9QMN3cJ&gclid=Cj0KCQiA9OnJBhD-ARIsAPV51xM0tHnHGQpGM9dA9-kSHE1oZ1-2XPYnGw1maI6bwmQCVBc9PedkpRcaAjdqEALw_wcB', 
+ 'Câmara dupla para fluxo de ar superior e estética limpa.');--
 
 INSERT INTO products (category, name, price, store, image_url, link, description) VALUES 
-('Gabinete', 'Lian Li O11D EVO RGB', 1599.90, 'Terabyte', 
- 'https://img.terabyteshop.com.br/produto/g/gabinete-gamer-lian-li-o11d-evo-rgb-mid-tower-vidro-temperado-e-atx-preto-sem-fonte-sem-fan-o11dergbx-black_176378.jpg', 
- 'https://www.terabyteshop.com.br/produto/27908/gabinete-gamer-lian-li-o11d-evo-rgb-mid-tower-vidro-temperado-e-atx-preto-sem-fonte-sem-fan-o11dergbx-black', 
- 'O gabinete mais icônico e versátil do mercado, agora com RGB.');
+('Gabinete', 'Gabinete Lian Li O11D EVO RGB', 1599.90, 'Terabyte', 
+ 'https://img.terabyteshop.com.br/produto/g/gabinete-gamer-lian-li-o11d-evo-rgb-mid-tower-vidro-temperado-e-atx-preto-sem-fonte-sem-fan-o11dergbx-black_241950.jpg', 
+ 'https://www.terabyteshop.com.br/produto/27908/gabinete-gamer-lian-li-o11d-evo-rgb-mid-tower-vidro-temperado-e-atx-preto-sem-fonte-sem-fan-o11dergbx-black?srsltid=AfmBOop4S4tkyb76Axj03L1UI_ssrQ01oS4ugYWZuzYudxDMIS0SOpu4', 
+ 'O gabinete mais icônico e versátil do mercado, agora com RGB.');--
 
 INSERT INTO products (category, name, price, store, image_url, link, description) VALUES 
-('Gabinete', 'Cooler Master Sneaker X Red', 3999.90, 'Pichau', 
- 'https://media.pichau.com.br/media/catalog/product/cache/2f958555330323e5f1dc3189736166e3/a/b/abk-sxnn-s38l3-r1.jpg', 
- 'https://www.pichau.com.br/gabinete-gamer-cooler-master-sneaker-x-red-mini-tower-fonte-sfx850w-water-cooler-flux-360mm-cabo-riser-pci-e-1-fan-mf120-halo-abk-sxnn-s38l3-r1', 
- 'Gabinete exclusivo em formato de tênis para colecionadores.');
+('Gabinete', 'Gabinete Cooler Master Sneaker X Red', 2999.90, 'Pichau', 
+ 'https://media.pichau.com.br/media/catalog/product/cache/2f958555330323e505eba7ce930bdf27/a/b/abk-sxnn-s38l3-r13.jpg', 
+ 'https://www.pichau.com.br/gabinete-gamer-cooler-master-sneaker-x-red-mini-tower-fonte-sfx850w-water-cooler-flux-360mm-cabo-riser-pci-e-1-fan-mf120-halo-abk-sxnn-s38l3-r1?srsltid=AfmBOorWpCH29Occiul_2nrFskPTvCImt6-BynqUXNHODKtYcezjqJdr', 
+ 'Gabinete exclusivo em formato de tênis para colecionadores.');--
 
 -- === MONITORES ===
 INSERT INTO products (category, name, price, store, image_url, link, description) VALUES 
-('Monitor', 'SuperFrame Precision 27" 240Hz', 1299.90, 'Terabyte', 
- 'https://img.terabyteshop.com.br/produto/g/monitor-gamer-superframe-precision-27-pol-curvo-full-hd-va-240hz-1ms-freesync-hdmidp-sfp2715_139930.jpg', 
- 'https://www.terabyteshop.com.br/produto/22209/monitor-gamer-superframe-precision-27-pol-curvo-full-hd-va-240hz-1ms-freesync-hdmidp-sfp2715', 
- 'Tela curva de 240Hz para fluidez extrema em jogos competitivos.');
+('Monitor', 'Monitor SuperFrame Precision 27" 240Hz', 1299.90, 'Terabyte', 
+ 'https://img.terabyteshop.com.br/produto/g/monitor-gamer-superframe-precision-27-pol-full-hd-fast-ips-240hz-1ms-freesync-hdr-hdmidp-sfpfb-27240-fhd_222341.jpg', 
+ 'https://www.terabyteshop.com.br/produto/26875/monitor-gamer-superframe-precision-27-pol-full-hd-fast-ips-240hz-1ms-freesync-hdr-hdmidp-sfpfb-27240-fhd?srsltid=AfmBOoqg7bhPMEusTEKIhtfpqXGgCw7J8DK-mlcr5dK4LjJki8bgcV5c', 
+ 'Tela curva de 240Hz para fluidez extrema em jogos competitivos.');--
 
 INSERT INTO products (category, name, price, store, image_url, link, description) VALUES 
-('Monitor', 'LG UltraGear 24" 144Hz IPS', 999.90, 'Pichau', 
- 'https://media.pichau.com.br/media/catalog/product/cache/2f958555330323e5f1dc3189736166e3/2/4/24gn60r-b.awzm6.jpg', 
- 'https://www.pichau.com.br/monitor-gamer-lg-ultragear-24-ips-fhd-144hz-1ms-hdmi-dp-24gn60r-b', 
- 'Qualidade de imagem IPS com a rapidez necessária para e-sports.');
+('Monitor', 'Monitor LG UltraGear 24" 144Hz IPS', 999.90, 'Pichau', 
+ 'https://media.pichau.com.br/media/catalog/product/cache/2f958555330323e505eba7ce930bdf27/2/4/24gn60r-b6.jpg', 
+ 'https://www.pichau.com.br/monitor-gamer-lg-ultragear-24-pol-ips-fhd-1ms-144hz-freesync-premium-dp-hdmi-24gn60r-b?srsltid=AfmBOop3oeN5P4NU5FrRLjMCZL_nQqhqgkGu7_t2-JMqYRLA1x_bb_s6', 
+ 'Qualidade de imagem IPS com a rapidez necessária para e-sports.');--
 
 INSERT INTO products (category, name, price, store, image_url, link, description) VALUES 
-('Monitor', 'Dell UltraSharp 27" 4K', 3499.00, 'KaBuM!', 
- 'https://images.kabum.com.br/produtos/fotos/254420/monitor-dell-u2723qe-27-4k-uhd-ips-60hz-5ms-hdmi-displayport-usb-c-vesa-ajustavel-u2723qe_1636113702_gg.jpg', 
- 'https://www.kabum.com.br/produto/254420/monitor-dell-27-4k-uhd-ips-60hz-5ms-hdmi-displayport-usb-c-vesa-ajustavel-u2723qe', 
- 'Precisão de cores e resolução 4K para profissionais.');
+('Monitor', 'Monitor Dell UltraSharp 27" 4K', 3499.00, 'KaBuM!', 
+ 'https://images7.kabum.com.br/produtos/fotos/sync_mirakl/534757/xlarge/Monitor-Dell-Ultrasharp-27-U2724d_1749215394.jpg', 
+ 'https://www.kabum.com.br/produto/534757/monitor-dell-ultrasharp-27-u2724d', 
+ 'Precisão de cores e resolução 4K para profissionais.');--

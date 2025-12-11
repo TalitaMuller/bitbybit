@@ -1,4 +1,3 @@
-// src/App.tsx
 import { useState, useEffect } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import { Header } from './components/layout/Header';
@@ -14,7 +13,6 @@ import { LoginPage } from './pages/LoginPage';
 import { ProtectedRoute } from './components/layout/ProtectedRoute';
 import { MyBuildsPage } from './pages/MyBuildsPage';
 
-// Interface para garantir que o TypeScript entenda o formato dos produtos que vêm do banco
 export interface Product {
     id: number;
     name: string;
@@ -31,11 +29,9 @@ function App() {
   const [loading, setLoading] = useState(true);
   const [compareList, setCompareList] = useState<number[]>([]);
 
-  // --- EFEITO PARA CARREGAR PRODUTOS DO BANCO DE DADOS ---
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        // Chama a rota que criamos no backend
         const response = await fetch('http://localhost:3001/api/products');
         const data = await response.json();
         setProducts(data);
@@ -62,7 +58,6 @@ function App() {
     });
   };
 
-  // Tela de carregamento enquanto busca os dados
   if (loading) {
     return (
       <div className="min-h-screen bg-gray-900 text-white flex flex-col items-center justify-center">

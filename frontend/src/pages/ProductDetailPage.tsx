@@ -1,4 +1,3 @@
-// src/pages/ProductDetailPage.tsx
 import React from 'react';
 import { useParams, Link } from 'react-router-dom';
 
@@ -9,7 +8,7 @@ interface Product {
     store: string;
     imageUrl: string;
     description: string;
-    link: string; // <--- 1. ADICIONADO: O campo link agora existe
+    link: string; 
 }
 
 interface ProductDetailPageProps {
@@ -47,7 +46,6 @@ export const ProductDetailPage: React.FC<ProductDetailPageProps> = ({ products }
                     <h3 className="text-xl font-semibold text-white mb-2">Descrição</h3>
                     <p className="text-gray-300">{product.description}</p>
                     
-                    {/* --- 2. CORREÇÃO: Botão virou Link (<a>) --- */}
                     <a 
                         href={product.link} 
                         target="_blank" 
